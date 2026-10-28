@@ -1,0 +1,7 @@
+KisanRate: Mandi Crop-Price Tracker
+1. Most traded crop: most frequent=2 (count 3), distinct=4
+2. Load a truck: 950
+3. Best store-and-sell: Interval[value=750, left=1, right=5]
+4. Merge two mandis: [1, 2, 3, 4, 6, 7, 9, 10]
+5. Price on a date: 5
+6. Days until a better price: [3, 1, 1, 2, 1, 0, 0]

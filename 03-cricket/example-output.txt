@@ -1,0 +1,7 @@
+ScoreLens: Ball-by-Ball Cricket Analyzer
+1. Scoring-shot profile: most frequent=1 (count 4), distinct=5
+2. Ways to make a target: 60
+3. Best momentum phase: Interval[value=10, left=3, right=5]
+4. Hottest 3-over spell: [34, 3]
+5. When did they reach 50?: 5
+6. Leaderboard: [Gill, Kohli, Rohit, Pant]

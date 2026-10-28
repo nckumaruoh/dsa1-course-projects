@@ -1,0 +1,7 @@
+StepUp: Fitness Tracker Coach
+1. Favourite activity: most frequent=2 (count 4), distinct=3
+2. Exactly 60 minutes: 4
+3. Best streak above goal: Interval[value=9920, left=3, right=5]
+4. Best 7-day week: [69920, 3]
+5. A fair daily goal: 8200
+6. Peak heart rate: [95, 110, 110, 110, 120, 120]

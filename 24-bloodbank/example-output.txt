@@ -1,0 +1,7 @@
+LifeLink: Blood Bank Inventory
+1. Most requested group: most frequent=0 (count 3), distinct=4
+2. Exact volume: 4
+3. Units usable each day: [1, 2, 3, 3, 3, 2, 1]
+4. Merge centre stocks: [3, 8, 10, 11, 11, 14, 15, 21]
+5. Units expiring soon: 4
+6. Request queue: served=6, total wait=8 min, longest wait=3 min

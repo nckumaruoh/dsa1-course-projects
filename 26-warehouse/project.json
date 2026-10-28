@@ -1,0 +1,45 @@
+{
+  "number": 26,
+  "id": "warehouse",
+  "title": "PackRight: Warehouse Order Packing",
+  "context": "Fulfilment centres pack orders into boxes and trucks, deciding box contents and truck capacity under deadlines.",
+  "input": "Items (weight, value); orders; truck capacities; dock bookings.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Pairs for a box",
+      "requirement": "Count pairs of items whose weights sum exactly to a box limit (hash counting)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Best box fill",
+      "requirement": "Best weight within a 15 kg box (subset DP)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Units in any hour range",
+      "requirement": "Prefix sums over units packed per hour."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Fill a truck fastest",
+      "requirement": "Fewest consecutive orders whose weight reaches a truck load (variable window)."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "Truck capacity",
+      "requirement": "Least truck capacity to ship in-order orders within 3 days."
+    },
+    {
+      "source_week": 10,
+      "teaching_week": 9,
+      "title": "Dock slots",
+      "requirement": "Merge overlapping dock bookings."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "number": 22,
+  "id": "cloud",
+  "title": "DriveDiet: Cloud Storage Cleaner",
+  "context": "Cloud drives fill up with duplicates and forgotten folders. A cleaner finds what to delete and how to sync efficiently.",
+  "input": "Folder tree; file sizes and hashes; two devices’ listings; paths.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Duplicate files",
+      "requirement": "Files with the same content hash."
+    },
+    {
+      "source_week": 3,
+      "teaching_week": 3,
+      "title": "Folder sizes",
+      "requirement": "Post-order recursion for every folder’s total size."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Merge device listings",
+      "requirement": "Merge two name-sorted file listings in one pass."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Find a name pattern",
+      "requirement": "Count occurrences of a pattern in the concatenated path list (KMP)."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "Sync bandwidth",
+      "requirement": "Minimum upload capacity per hour so files, in order, sync within 4 hours."
+    },
+    {
+      "source_week": 11,
+      "teaching_week": 11,
+      "title": "Thumbnail cache",
+      "requirement": "LRU cache of thumbnails; hit ratio."
+    }
+  ]
+}

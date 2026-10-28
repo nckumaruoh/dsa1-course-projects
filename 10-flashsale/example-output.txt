@@ -1,0 +1,7 @@
+FlashCart: Flash-Sale Inventory
+1. Bot detection: repeats=4, distinct=4, first repeat=7
+2. Fewest coupons: 3
+3. Units sold in any minute range: [1310, 1740]
+4. Bundle offers: [250, 750]
+5. Packing rate: 120
+6. Product page cache: hits=3 of 9, final order (most recent first) [1, 5, 2]

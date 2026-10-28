@@ -1,0 +1,7 @@
+PackRight: Warehouse Order Packing
+1. Pairs for a box: 3
+2. Best box fill: 15
+3. Units in any hour range: [810, 1260]
+4. Fill a truck fastest: 5
+5. Truck capacity: 17
+6. Dock slots: [[8, 12], [13, 14], [15, 17]]

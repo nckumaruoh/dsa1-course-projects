@@ -1,0 +1,45 @@
+{
+  "number": 23,
+  "id": "mandi",
+  "title": "KisanRate: Mandi Crop-Price Tracker",
+  "context": "Farmers check mandi prices on phones before deciding when and where to sell. Price trends and the best selling day matter.",
+  "input": "Daily modal prices per crop per mandi; truck loads.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Most traded crop",
+      "requirement": "Arrivals per crop id with a count array."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Load a truck",
+      "requirement": "Bags whose weights fill a 1 000 kg truck as fully as possible (subset sum)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Best store-and-sell",
+      "requirement": "Best buy-low, sell-high pair (running minimum)."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Merge two mandis",
+      "requirement": "Merge two date-sorted price lists into one timeline."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Price on a date",
+      "requirement": "Find a date in the sorted list (lower bound)."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Days until a better price",
+      "requirement": "Monotonic stack over prices."
+    }
+  ]
+}

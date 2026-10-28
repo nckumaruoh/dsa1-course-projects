@@ -1,0 +1,7 @@
+SafePay: UPI Fraud Monitor
+1. Duplicate transactions: repeats=2, distinct=4, first repeat=7002
+2. Matching a flagged amount: 5
+3. Exact-amount runs: 4
+4. Fastest Rs 50 000: 4
+5. Transactions in a window: 4
+6. Rolling maximum amount: [1200, 9000, 9000, 9000, 8000]

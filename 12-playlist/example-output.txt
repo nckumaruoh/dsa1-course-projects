@@ -1,0 +1,7 @@
+TuneLoop: Music Playlist Engine
+1. Most played song: most frequent=4 (count 3), distinct=4
+2. Party elimination game: 4
+3. Queue duration: [625, 1290]
+4. At most two artists: 5
+5. Song at a given time: 3
+6. Offline cache: hits=1 of 8, final order (most recent first) [7, 4, 2]

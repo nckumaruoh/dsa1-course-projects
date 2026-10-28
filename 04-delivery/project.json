@@ -1,0 +1,45 @@
+{
+  "number": 4,
+  "id": "delivery",
+  "title": "DashRoute: Food-Delivery Rider Batching",
+  "context": "Delivery apps batch orders for riders, promise ETAs and decide how many riders to keep on shift.",
+  "input": "Orders: id, ready time, restaurant, distance (km), bag weight; rider shifts.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Duplicate orders",
+      "requirement": "Order ids submitted twice by app retries (count array over ids)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Fill a rider’s bag",
+      "requirement": "Choose orders whose weights fit a 10 kg bag as fully as possible (subset sum with memo)."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Pair short trips",
+      "requirement": "Find two orders whose distances sum exactly to a rider’s planned 9 km loop: sort and two pointers."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Fastest 50 orders",
+      "requirement": "Shortest stretch of minutes in which 50 orders arrived (variable window)."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "Minimum delivery rate",
+      "requirement": "Minimum deliveries per hour so every zone’s orders finish within 6 hours (binary search on the rate)."
+    },
+    {
+      "source_week": 10,
+      "teaching_week": 9,
+      "title": "Merge rider shifts",
+      "requirement": "Merge overlapping shift windows to see when coverage exists."
+    }
+  ]
+}

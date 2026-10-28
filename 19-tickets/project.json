@@ -1,0 +1,45 @@
+{
+  "number": 19,
+  "id": "tickets",
+  "title": "SeatSure: Event Ticket Booking",
+  "context": "Concert and train bookings must prevent double-selling a seat across overlapping segments, under heavy demand.",
+  "input": "Bookings [from, to) on segments; group sizes; price tiers.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Double bookings",
+      "requirement": "Seat ids booked twice (count array)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Fill a row exactly",
+      "requirement": "List distinct groups of bookings that exactly fill a 10-seat row (backtracking)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Segment occupancy",
+      "requirement": "Rebuild occupancy from bookings with a difference array."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Most shows in one venue",
+      "requirement": "Activity selection over show slots."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Price tier",
+      "requirement": "Tier for a seat row with a lower bound on tier boundaries."
+    },
+    {
+      "source_week": 10,
+      "teaching_week": 9,
+      "title": "Merge holds",
+      "requirement": "Merge overlapping seat-hold periods."
+    }
+  ]
+}

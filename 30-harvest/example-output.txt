@@ -1,0 +1,7 @@
+RainCatch: Rooftop Water Harvesting
+1. Rainfall bands: most frequent=0 (count 3), distinct=4
+2. Flooded region: 9
+3. Rainfall over a period: [115, 178]
+4. Water trapped: 59
+5. Pump capacity: 60
+6. Largest flat roof area: 10

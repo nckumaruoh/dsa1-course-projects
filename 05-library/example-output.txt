@@ -1,0 +1,7 @@
+ShelfSense: Library Circulation
+1. Double scans at the gate: repeats=3, distinct=3, first repeat=1450
+2. Category tree totals: 255
+3. Books out each day: [1, 2, 2, 2, 1, 2, 2, 1]
+4. Keyword search: 3
+5. Find a book: 4
+6. Return-counter queue: served=7, total wait=26 min, longest wait=7 min

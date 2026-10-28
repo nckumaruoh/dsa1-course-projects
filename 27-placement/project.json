@@ -1,0 +1,45 @@
+{
+  "number": 27,
+  "id": "placement",
+  "title": "PlaceMe: Campus Placement Scheduler",
+  "context": "Placement cells schedule company slots, rooms and interviews across a busy week, while students juggle overlapping drives.",
+  "input": "Company slots [start, end), registrations, CGPA (×10 as integers), round durations.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Duplicate registrations",
+      "requirement": "Students registered twice for one drive (count array)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Round plans",
+      "requirement": "List distinct sets of interview rounds whose durations total exactly 120 minutes."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Rooms needed per hour",
+      "requirement": "Simultaneous slots per hour via a difference array."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Most interviews for one student",
+      "requirement": "Activity selection: maximum non-overlapping interviews."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Eligibility cut-off",
+      "requirement": "Sorted CGPAs (×10): count students in [75, 90)."
+    },
+    {
+      "source_week": 10,
+      "teaching_week": 9,
+      "title": "Merge room bookings",
+      "requirement": "Merge overlapping bookings per room."
+    }
+  ]
+}

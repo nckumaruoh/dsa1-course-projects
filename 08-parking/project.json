@@ -1,0 +1,45 @@
+{
+  "number": 8,
+  "id": "parking",
+  "title": "ParkSmart: Mall Parking Occupancy",
+  "context": "Malls show free-space counts at the entrance and charge by the hour. Sensors log every entry and exit.",
+  "input": "Entries/exits with times and plates; slot grid (levels × slots) as a 2-D array.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Re-entry without exit",
+      "requirement": "Plates seen entering twice without an exit (count array over plate ids)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Routes to a free slot",
+      "requirement": "Count right/down routes through the lot grid avoiding blocked cells (memo DP)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Free slots in a zone",
+      "requirement": "2-D prefix sums over the slot grid answer 'free slots in this block' in O(1)."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "EV charger bookings",
+      "requirement": "Most non-overlapping bookings one charger can serve (activity selection)."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Fee slab lookup",
+      "requirement": "Fee slab for a stay length with a lower bound on slab boundaries."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Entry gate queue",
+      "requirement": "Cars queue at the boom barrier; compare 1 and 2 gates."
+    }
+  ]
+}

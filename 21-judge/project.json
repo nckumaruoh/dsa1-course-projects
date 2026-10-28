@@ -1,0 +1,45 @@
+{
+  "number": 21,
+  "id": "judge",
+  "title": "CodeArena: Mini Online Judge",
+  "context": "Programming contests grade submissions, rank participants and check code for copying.",
+  "input": "Submissions (user, problem, time, verdict); source strings; problem points.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Verdict statistics",
+      "requirement": "Counts per verdict id; the most common verdict."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Problem sets worth 100",
+      "requirement": "Count sets of problems whose points total exactly 100 (backtracking)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Submissions per minute range",
+      "requirement": "Prefix sums over per-minute submissions."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Plagiarism score",
+      "requirement": "LCS of token strings as a similarity measure."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "Judge servers",
+      "requirement": "Minimum capacity per server so queued batches (in order) finish within 3 rounds."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Expression tests",
+      "requirement": "Evaluate arithmetic test expressions (shunting-yard)."
+    }
+  ]
+}

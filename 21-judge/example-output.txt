@@ -1,0 +1,7 @@
+CodeArena: Mini Online Judge
+1. Verdict statistics: most frequent=1 (count 4), distinct=3
+2. Problem sets worth 100: 5
+3. Submissions per minute range: [71, 123]
+4. Plagiarism score: 7
+5. Judge servers: 55
+6. Expression tests: 23

@@ -1,0 +1,45 @@
+{
+  "number": 3,
+  "id": "cricket",
+  "title": "ScoreLens: Ball-by-Ball Cricket Analyzer",
+  "context": "Fantasy and broadcast apps compute strike rates, partnerships and momentum swings from ball-by-ball data seconds after each delivery.",
+  "input": "Runs per ball and per over (arrays), wicket flags, batter ids.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Scoring-shot profile",
+      "requirement": "Count how often each run value (0, 1, 2, 4, 6) occurs with a count array; report the most frequent."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Ways to make a target",
+      "requirement": "Number of ordered ball sequences scoring exactly R from shots {1, 2, 4, 6} (memoised recursion)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Best momentum phase",
+      "requirement": "Overs where the batting side did best against a par of 8: maximum subarray of (runs − 8)."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Hottest 3-over spell",
+      "requirement": "Most runs in any 3 consecutive overs."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "When did they reach 50?",
+      "requirement": "Over in which the cumulative score first reached 50: lower bound on the running total."
+    },
+    {
+      "source_week": 10,
+      "teaching_week": 9,
+      "title": "Leaderboard",
+      "requirement": "Rank batters by runs (desc), then fewer balls (multi-key comparator)."
+    }
+  ]
+}

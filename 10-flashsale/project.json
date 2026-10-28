@@ -1,0 +1,45 @@
+{
+  "number": 10,
+  "id": "flashsale",
+  "title": "FlashCart: Flash-Sale Inventory",
+  "context": "During a flash sale thousands of add-to-cart events hit in minutes. The store must avoid overselling and spot bots.",
+  "input": "Events: user id, product id, quantity, timestamp; stock per product; coupon values.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Bot detection",
+      "requirement": "Users placing repeated orders (count array over user ids)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Fewest coupons",
+      "requirement": "Fewest coupons of values {50, 100, 200} that make an exact discount (coin change)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Units sold in any minute range",
+      "requirement": "Prefix sums over units per minute."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Bundle offers",
+      "requirement": "Two products whose prices sum exactly to the bundle price: sort and two pointers."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "Packing rate",
+      "requirement": "Minimum orders packed per hour so every warehouse finishes within 6 hours."
+    },
+    {
+      "source_week": 11,
+      "teaching_week": 11,
+      "title": "Product page cache",
+      "requirement": "Cache product pages with LRU eviction; report the hit ratio."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "number": 5,
+  "id": "library",
+  "title": "ShelfSense: Library Circulation",
+  "context": "Libraries track issues and returns, compute fines, and must answer 'is this book on the shelf?' instantly at the counter.",
+  "input": "Books sorted by accession number; issue records with day numbers; a category tree.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Double scans at the gate",
+      "requirement": "Accession numbers scanned twice in one session (count array or set)."
+    },
+    {
+      "source_week": 3,
+      "teaching_week": 3,
+      "title": "Category tree totals",
+      "requirement": "Books per category in a nested category tree (post-order recursion)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Books out each day",
+      "requirement": "Each issue [day, returnDay] adds 1 to a range: difference array gives books-out per day."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Keyword search",
+      "requirement": "Count occurrences of a keyword in the catalogue text (KMP)."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Find a book",
+      "requirement": "Binary search the sorted accession numbers; report the insertion point when absent."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Return-counter queue",
+      "requirement": "Students returning books queue at the counter; compare 1 and 2 staff."
+    }
+  ]
+}

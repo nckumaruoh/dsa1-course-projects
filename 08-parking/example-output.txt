@@ -1,0 +1,7 @@
+ParkSmart: Mall Parking Occupancy
+1. Re-entry without exit: repeats=2, distinct=4, first repeat=3301
+2. Routes to a free slot: 2
+3. Free slots in a zone: 3
+4. EV charger bookings: 4
+5. Fee slab lookup: 2
+6. Entry gate queue: served=7, total wait=28 min, longest wait=7 min

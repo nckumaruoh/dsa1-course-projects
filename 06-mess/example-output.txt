@@ -1,0 +1,7 @@
+MessVoice: Hostel Feedback Analyzer
+1. Most common complaint word: most frequent=12 (count 3), distinct=4
+2. Palindrome coupon codes: true
+3. Merge two feedback forms: [1, 2, 3, 3, 4, 6, 8, 9]
+4. Keyword alerts: 2
+5. Ratings in a band: 5
+6. Clean formatting: false

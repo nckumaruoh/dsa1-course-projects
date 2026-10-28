@@ -1,0 +1,45 @@
+{
+  "number": 2,
+  "id": "metro",
+  "title": "MetroPulse: Smart-Card Ridership",
+  "context": "Metro systems log every card tap at entry and exit gates. Planners study ridership peaks, crowded stretches between stations and fare products.",
+  "input": "Taps: card id, station index (0..24), time (minutes), entry/exit flag. Fare table as an array.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Busiest station",
+      "requirement": "Entries per station with an int array indexed by station; report the busiest."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Cheapest fare products",
+      "requirement": "Fewest trip cards (10, 25 and 60 rides) to cover a month’s rides exactly (coin change)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Load on each track segment",
+      "requirement": "Each journey occupies segments [from, to): add +k/−k to a difference array, rebuild the load per segment."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Peak 15-minute window",
+      "requirement": "Busiest window of entries with a fixed-size sliding window over per-5-minute counts."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "Train capacity needed",
+      "requirement": "Minimum train capacity so the queued riders, in order, are carried within 4 trips (binary search on the answer, greedy check)."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Next busier hour",
+      "requirement": "For each hour, how many hours until a busier one (monotonic stack)."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "number": 25,
+  "id": "moderation",
+  "title": "SafeChat: Message Moderation",
+  "context": "Group-chat apps filter abusive phrases, throttle spammers and catch disguised words without slowing delivery.",
+  "input": "Messages (user, time, text); banned phrases; flag lists.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Repeated messages",
+      "requirement": "Identical message hashes repeated by a user."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Disguised words",
+      "requirement": "Edit distance between a message word and a banned word (memo table)."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Merge moderator flags",
+      "requirement": "Merge two moderators’ time-sorted flag lists."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Phrase filter",
+      "requirement": "Count banned phrase occurrences in a message (KMP)."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Messages in a window",
+      "requirement": "Sorted timestamps: count messages in [t1, t2)."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Markup validation",
+      "requirement": "Validate nested formatting markers with a stack."
+    }
+  ]
+}

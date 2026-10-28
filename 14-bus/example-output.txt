@@ -1,0 +1,7 @@
+BusBuddy: Route and Timetable Planner
+1. Busiest boarding stop: most frequent=5 (count 3), distinct=4
+2. Routes through the grid: 3
+3. Passengers on board: [12, 20, 20, 23, 23, 15]
+4. Most trips for one bus: 3
+5. Depot spacing: 15
+6. Operating hours: [[6, 13], [14, 21]]

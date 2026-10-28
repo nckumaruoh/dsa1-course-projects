@@ -1,0 +1,7 @@
+MetroPulse: Smart-Card Ridership
+1. Busiest station: most frequent=3 (count 4), distinct=4
+2. Cheapest fare products: 4
+3. Load on each track segment: [120, 180, 260, 200, 80, 80]
+4. Peak 15-minute window: [450, 2]
+5. Train capacity needed: 750
+6. Next busier hour: [1, 3, 2, 1, 0, 0, 0]

@@ -1,0 +1,45 @@
+{
+  "number": 11,
+  "id": "exams",
+  "title": "ExamDesk: Results and Evaluation",
+  "context": "Exam cells take attendance, distribute scripts to evaluators, catch copying and publish ranked results.",
+  "input": "Students (roll, marks per subject); answer strings; script bundles.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Duplicate attendance",
+      "requirement": "Roll numbers marked present twice (count array)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Grace marks",
+      "requirement": "Fewest grace 'units' (1, 2, 5 marks) to reach the pass mark exactly (coin change)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Marks in any roll range",
+      "requirement": "Prefix sums of marks; totals for roll ranges in O(1)."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Copying check",
+      "requirement": "Longest common subsequence of two answer strings as a similarity score."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "Evaluator load",
+      "requirement": "Split script bundles (in order) among 3 evaluators minimising the maximum load."
+    },
+    {
+      "source_week": 10,
+      "teaching_week": 9,
+      "title": "Rank list",
+      "requirement": "Total desc, then maths desc (multi-key comparator)."
+    }
+  ]
+}

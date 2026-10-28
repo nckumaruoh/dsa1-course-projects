@@ -1,0 +1,7 @@
+AirWatch: City AQI Monitor
+1. Hours per category: most frequent=3 (count 4), distinct=3
+2. Polluted zone size: 9
+3. Pollution in a city block: 815
+4. Worst 3-hour window: [700, 3]
+5. Hours in a band: 3
+6. Hours until it gets worse: [1, 3, 2, 1, 2, 1, 0]

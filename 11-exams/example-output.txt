@@ -1,0 +1,7 @@
+ExamDesk: Results and Evaluation
+1. Duplicate attendance: repeats=2, distinct=4, first repeat=101
+2. Grace marks: 4
+3. Marks in any roll range: [221, 226]
+4. Copying check: 6
+5. Evaluator load: 127
+6. Rank list: [Bala, Chitra, Asha, Dev]

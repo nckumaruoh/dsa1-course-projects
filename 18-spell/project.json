@@ -1,0 +1,45 @@
+{
+  "number": 18,
+  "id": "spell",
+  "title": "TypeRight: Spell Checker and Autocomplete",
+  "context": "Keyboards and search boxes autocomplete as you type and suggest corrections, mixing sorted search with string algorithms.",
+  "input": "Sorted dictionary of words; typed words; letter frequencies.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Letter frequencies",
+      "requirement": "Count letters (int[26]); most frequent letter in a text."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Edit distance",
+      "requirement": "Minimum insertions, deletions and replacements turning a typo into a word (memo table)."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Merge two dictionaries",
+      "requirement": "Merge the sorted base dictionary with a user’s sorted custom words."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Similarity score",
+      "requirement": "LCS length between two words as a similarity score."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Autocomplete range",
+      "requirement": "Words with a prefix form one block: two lower bounds."
+    },
+    {
+      "source_week": 10,
+      "teaching_week": 9,
+      "title": "Most common typos",
+      "requirement": "Top-k most frequent typo ids."
+    }
+  ]
+}

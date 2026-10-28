@@ -1,0 +1,45 @@
+{
+  "number": 30,
+  "id": "harvest",
+  "title": "RainCatch: Rooftop Water Harvesting",
+  "context": "Housing societies estimate how much rain their terraces trap and plan pumping and tank capacity for the monsoon.",
+  "input": "Terrace heights along a row; daily rainfall (mm); a terrace grid.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Rainfall bands",
+      "requirement": "Days per rainfall band (count array); the most common band."
+    },
+    {
+      "source_week": 3,
+      "teaching_week": 3,
+      "title": "Flooded region",
+      "requirement": "Flood fill on a terrace grid to size a connected puddle."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Rainfall over a period",
+      "requirement": "Prefix sums of daily rainfall."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Water trapped",
+      "requirement": "Trapping rain water with two pointers."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "Pump capacity",
+      "requirement": "Minimum daily pumping capacity to move collected water, in order, within 4 days."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Largest flat roof area",
+      "requirement": "Largest rectangle in the height histogram."
+    }
+  ]
+}

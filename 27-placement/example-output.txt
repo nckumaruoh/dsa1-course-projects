@@ -1,0 +1,7 @@
+PlaceMe: Campus Placement Scheduler
+1. Duplicate registrations: repeats=2, distinct=4, first repeat=2201
+2. Round plans: [[15, 30, 30, 45], [15, 45, 60], [30, 30, 60], [30, 90]]
+3. Rooms needed per hour: [1, 2, 3, 2, 2, 2, 1, 1]
+4. Most interviews for one student: 4
+5. Eligibility cut-off: 4
+6. Merge room bookings: [[9, 12], [13, 17], [18, 19]]

@@ -1,0 +1,5 @@
+**/build/
+**/*.class
+.env*
+*.log
+!test-results.txt

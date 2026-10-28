@@ -1,0 +1,572 @@
+[
+  {
+    "number": 1,
+    "id": "canteen",
+    "title": "CampusBite: Canteen Order Analytics",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "01-campusbite",
+    "verified_at": "2026-10-28T06:07:13.523102+00:00"
+  },
+  {
+    "number": 2,
+    "id": "metro",
+    "title": "MetroPulse: Smart-Card Ridership",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "02-metro",
+    "verified_at": "2026-10-28T06:04:20.405366+00:00"
+  },
+  {
+    "number": 3,
+    "id": "cricket",
+    "title": "ScoreLens: Ball-by-Ball Cricket Analyzer",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "03-cricket",
+    "verified_at": "2026-10-28T06:04:22.928413+00:00"
+  },
+  {
+    "number": 4,
+    "id": "delivery",
+    "title": "DashRoute: Food-Delivery Rider Batching",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "04-delivery",
+    "verified_at": "2026-10-28T06:04:25.510381+00:00"
+  },
+  {
+    "number": 5,
+    "id": "library",
+    "title": "ShelfSense: Library Circulation",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "05-library",
+    "verified_at": "2026-10-28T06:04:28.032824+00:00"
+  },
+  {
+    "number": 6,
+    "id": "mess",
+    "title": "MessVoice: Hostel Feedback Analyzer",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "06-mess",
+    "verified_at": "2026-10-28T06:04:30.679231+00:00"
+  },
+  {
+    "number": 7,
+    "id": "fitness",
+    "title": "StepUp: Fitness Tracker Coach",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "07-fitness",
+    "verified_at": "2026-10-28T06:04:33.383777+00:00"
+  },
+  {
+    "number": 8,
+    "id": "parking",
+    "title": "ParkSmart: Mall Parking Occupancy",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "08-parking",
+    "verified_at": "2026-10-28T06:04:36.520272+00:00"
+  },
+  {
+    "number": 9,
+    "id": "aqi",
+    "title": "AirWatch: City AQI Monitor",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "09-aqi",
+    "verified_at": "2026-10-28T06:04:39.300698+00:00"
+  },
+  {
+    "number": 10,
+    "id": "flashsale",
+    "title": "FlashCart: Flash-Sale Inventory",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "10-flashsale",
+    "verified_at": "2026-10-28T06:04:41.971917+00:00"
+  },
+  {
+    "number": 11,
+    "id": "exams",
+    "title": "ExamDesk: Results and Evaluation",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "11-exams",
+    "verified_at": "2026-10-28T06:04:44.674778+00:00"
+  },
+  {
+    "number": 12,
+    "id": "playlist",
+    "title": "TuneLoop: Music Playlist Engine",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "12-playlist",
+    "verified_at": "2026-10-28T06:04:47.161954+00:00"
+  },
+  {
+    "number": 13,
+    "id": "surge",
+    "title": "FairFare: Ride-Share Surge Analyzer",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "13-surge",
+    "verified_at": "2026-10-28T06:04:49.849167+00:00"
+  },
+  {
+    "number": 14,
+    "id": "bus",
+    "title": "BusBuddy: Route and Timetable Planner",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "14-bus",
+    "verified_at": "2026-10-28T06:04:52.458912+00:00"
+  },
+  {
+    "number": 15,
+    "id": "opd",
+    "title": "CareQueue: Hospital OPD Tokens",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "15-opd",
+    "verified_at": "2026-10-28T06:04:54.923012+00:00"
+  },
+  {
+    "number": 16,
+    "id": "stocks",
+    "title": "TickerTrail: Stock Watchlist Analytics",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "16-stocks",
+    "verified_at": "2026-10-28T06:04:57.861985+00:00"
+  },
+  {
+    "number": 17,
+    "id": "hashtags",
+    "title": "TrendTag: Social Hashtag Trends",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "17-hashtags",
+    "verified_at": "2026-10-28T06:05:00.387905+00:00"
+  },
+  {
+    "number": 18,
+    "id": "spell",
+    "title": "TypeRight: Spell Checker and Autocomplete",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "18-spell",
+    "verified_at": "2026-10-28T06:05:03.055742+00:00"
+  },
+  {
+    "number": 19,
+    "id": "tickets",
+    "title": "SeatSure: Event Ticket Booking",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "19-tickets",
+    "verified_at": "2026-10-28T06:05:05.716434+00:00"
+  },
+  {
+    "number": 20,
+    "id": "meter",
+    "title": "WattWise: Smart Electricity Billing",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "20-meter",
+    "verified_at": "2026-10-28T06:05:08.525017+00:00"
+  },
+  {
+    "number": 21,
+    "id": "judge",
+    "title": "CodeArena: Mini Online Judge",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "21-judge",
+    "verified_at": "2026-10-28T06:05:11.722691+00:00"
+  },
+  {
+    "number": 22,
+    "id": "cloud",
+    "title": "DriveDiet: Cloud Storage Cleaner",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "22-cloud",
+    "verified_at": "2026-10-28T06:05:14.568663+00:00"
+  },
+  {
+    "number": 23,
+    "id": "mandi",
+    "title": "KisanRate: Mandi Crop-Price Tracker",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "23-mandi",
+    "verified_at": "2026-10-28T06:05:18.348674+00:00"
+  },
+  {
+    "number": 24,
+    "id": "bloodbank",
+    "title": "LifeLink: Blood Bank Inventory",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "24-bloodbank",
+    "verified_at": "2026-10-28T06:05:21.737893+00:00"
+  },
+  {
+    "number": 25,
+    "id": "moderation",
+    "title": "SafeChat: Message Moderation",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "25-moderation",
+    "verified_at": "2026-10-28T06:05:24.777587+00:00"
+  },
+  {
+    "number": 26,
+    "id": "warehouse",
+    "title": "PackRight: Warehouse Order Packing",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "26-warehouse",
+    "verified_at": "2026-10-28T06:05:27.539942+00:00"
+  },
+  {
+    "number": 27,
+    "id": "placement",
+    "title": "PlaceMe: Campus Placement Scheduler",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "27-placement",
+    "verified_at": "2026-10-28T06:05:30.340886+00:00"
+  },
+  {
+    "number": 28,
+    "id": "editor",
+    "title": "NoteNest: Text Editor Core",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "28-editor",
+    "verified_at": "2026-10-28T06:05:33.059354+00:00"
+  },
+  {
+    "number": 29,
+    "id": "fraud",
+    "title": "SafePay: UPI Fraud Monitor",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "29-fraud",
+    "verified_at": "2026-10-28T06:05:35.752797+00:00"
+  },
+  {
+    "number": 30,
+    "id": "harvest",
+    "title": "RainCatch: Rooftop Water Harvesting",
+    "status": "verified_locally",
+    "checks": {
+      "specification_review": true,
+      "implementation": true,
+      "automated_tests": true,
+      "worked_examples": true,
+      "explanation_and_complexity": true,
+      "related_applications": true,
+      "execution_documentation": true,
+      "github_publication": false,
+      "website_link": false
+    },
+    "folder": "30-harvest",
+    "verified_at": "2026-10-28T06:05:38.337091+00:00"
+  }
+]

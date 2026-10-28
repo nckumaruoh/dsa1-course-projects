@@ -1,0 +1,7 @@
+NoteNest: Text Editor Core
+1. Most used word: most frequent=7 (count 3), distinct=4
+2. Autocorrect distance: 1
+3. Words in any paragraphs: [385, 680]
+4. Find all: 4
+5. Jump to an offset: 3
+6. Bracket matching: false

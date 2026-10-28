@@ -1,0 +1,7 @@
+DriveDiet: Cloud Storage Cleaner
+1. Duplicate files: repeats=3, distinct=3, first repeat=a9
+2. Folder sizes: 3255
+3. Merge device listings: [2, 3, 5, 5, 9, 11, 14]
+4. Find a name pattern: 4
+5. Sync bandwidth: 560
+6. Thumbnail cache: hits=1 of 7, final order (most recent first) [3, 1]

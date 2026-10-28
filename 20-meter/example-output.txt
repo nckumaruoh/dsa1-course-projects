@@ -1,0 +1,7 @@
+WattWise: Smart Electricity Billing
+1. Duplicate readings: repeats=2, distinct=4, first repeat=302
+2. Recharge packs: 3
+3. Bill divisibility: 7
+4. Peak demand: [70, 3]
+5. Slab lookup: 2
+6. Rolling maximum load: [15, 22, 22, 30, 30]

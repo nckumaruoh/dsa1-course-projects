@@ -1,0 +1,7 @@
+SafeChat: Message Moderation
+1. Repeated messages: repeats=3, distinct=3, first repeat=h1
+2. Disguised words: 1
+3. Merge moderator flags: [5, 7, 12, 12, 18, 30, 40]
+4. Phrase filter: 3
+5. Messages in a window: 4
+6. Markup validation: true

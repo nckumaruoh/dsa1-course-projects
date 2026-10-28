@@ -1,0 +1,7 @@
+CareQueue: Hospital OPD Tokens
+1. Duplicate tokens: repeats=2, distinct=5, first repeat=18
+2. Department totals: 100
+3. Patients in any hours: [95, 116]
+4. Busiest two hours: [90, 3]
+5. Consultation capacity: 65
+6. Token queue: served=7, total wait=20 min, longest wait=7 min

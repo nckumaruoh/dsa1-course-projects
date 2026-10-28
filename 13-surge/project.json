@@ -1,0 +1,45 @@
+{
+  "number": 13,
+  "id": "surge",
+  "title": "FairFare: Ride-Share Surge Analyzer",
+  "context": "Ride-hailing apps raise prices when demand outstrips drivers. Analysts check when surges happen and whether they are fair.",
+  "input": "Requests and available drivers per minute per zone; shift lengths.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Duplicate ride requests",
+      "requirement": "Rider ids that requested twice within a minute (count array)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Shift plans",
+      "requirement": "Ordered ways to cover a 10-hour day with 2-, 3- and 4-hour shifts (memoised recursion)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Worst shortage stretch",
+      "requirement": "Maximum run of (requests − drivers): the most painful surge."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Shortest stretch reaching 50 rides",
+      "requirement": "Minimum window with requests ≥ target (positive counts)."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "Driver rate needed",
+      "requirement": "Minimum rides per hour per driver so every zone clears within 8 hours."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Surge cap",
+      "requirement": "Rolling maximum surge multiplier over 3 intervals (deque)."
+    }
+  ]
+}

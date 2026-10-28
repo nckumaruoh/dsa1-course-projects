@@ -1,0 +1,7 @@
+SeatSure: Event Ticket Booking
+1. Double bookings: repeats=2, distinct=4, first repeat=15
+2. Fill a row exactly: [[2, 3, 5], [2, 8], [3, 7], [5, 5]]
+3. Segment occupancy: [3, 5, 6, 6, 4, 5, 4]
+4. Most shows in one venue: 3
+5. Price tier: 2
+6. Merge holds: [[1, 6], [8, 12], [15, 18]]

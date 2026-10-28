@@ -1,0 +1,22 @@
+CampusBite — synthetic canteen shift
+repeats=3, distinct=5, first repeat=502
+Best combo within Rs 150: 150
+Revenue queries: [8200, 11350]
+Rush [sum,start]: [8200, 2]
+Orders in [240,300): 4
+1 counter(s): served=7, total wait=46 min, longest wait=13 min
+Service[token=1, arrival=0, counter=0, start=0, finish=3, waitMinutes=0]
+Service[token=2, arrival=1, counter=0, start=3, finish=6, waitMinutes=2]
+Service[token=3, arrival=1, counter=0, start=6, finish=9, waitMinutes=5]
+Service[token=4, arrival=2, counter=0, start=9, finish=12, waitMinutes=7]
+Service[token=5, arrival=4, counter=0, start=12, finish=15, waitMinutes=8]
+Service[token=6, arrival=4, counter=0, start=15, finish=18, waitMinutes=11]
+Service[token=7, arrival=5, counter=0, start=18, finish=21, waitMinutes=13]
+2 counter(s): served=7, total wait=13 min, longest wait=4 min
+Service[token=1, arrival=0, counter=0, start=0, finish=3, waitMinutes=0]
+Service[token=2, arrival=1, counter=1, start=1, finish=4, waitMinutes=0]
+Service[token=3, arrival=1, counter=0, start=3, finish=6, waitMinutes=2]
+Service[token=4, arrival=2, counter=1, start=4, finish=7, waitMinutes=2]
+Service[token=5, arrival=4, counter=0, start=6, finish=9, waitMinutes=2]
+Service[token=6, arrival=4, counter=1, start=7, finish=10, waitMinutes=3]
+Service[token=7, arrival=5, counter=0, start=9, finish=12, waitMinutes=4]

@@ -1,0 +1,18 @@
+ProjectTest
+PASS: 4021 basic primitive checks; fixed seed, independent oracles.
+PASS: 15 project-specific sample/boundary checks; all six increments.
+
+W04ProjectTests
+PASS project/catalogue: 66355 assertions;22 source milestones+44 additional cases, memo reuse, witness indices, bounds and family oracles.
+
+W05ProjectTests
+PASS: 124578 project assertions; 25 catalogue samples +50 listed additional cases; frozen queries,7 domain families,witnesses,bounds and overflow.
+
+W06ProjectTests
+PASS: 914617 project assertions;14 catalogue samples +28 listed additional cases;4 domain families,stable copied shard merge,heat-map,bounds and long arithmetic.
+
+W09ProjectTests
+PASS: 72915 project assertions;12 source samples +43 listed additional cases;4 families,partition/placement/rate/order-statistic oracles,predicate neighbours,counters and input bounds.
+
+W11ProjectTests
+PASS: 741815 project assertions;3 catalogue traces,15 repeated listed checks,cache counters,validation,SLM capacity experiment.

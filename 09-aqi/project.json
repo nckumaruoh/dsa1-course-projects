@@ -1,0 +1,45 @@
+{
+  "number": 9,
+  "id": "aqi",
+  "title": "AirWatch: City AQI Monitor",
+  "context": "Pollution boards publish hourly AQI from many stations. Citizens want alerts and trends; officials want the worst stretches and areas.",
+  "input": "Hourly AQI per station (arrays); a city grid of pollution readings.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Hours per category",
+      "requirement": "Count hours in each AQI category (count array over category ids); most common category."
+    },
+    {
+      "source_week": 3,
+      "teaching_week": 3,
+      "title": "Polluted zone size",
+      "requirement": "Size of the connected polluted region on a city grid containing a given cell (flood fill)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Pollution in a city block",
+      "requirement": "2-D prefix sums over a grid of sensor readings; the total for any rectangular block in O(1)."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Worst 3-hour window",
+      "requirement": "Highest 3-hour total with a fixed window."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Hours in a band",
+      "requirement": "Sorted readings: hours with AQI in [200, 300) via two lower bounds."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Hours until it gets worse",
+      "requirement": "For each hour, hours until a higher AQI (monotonic stack)."
+    }
+  ]
+}

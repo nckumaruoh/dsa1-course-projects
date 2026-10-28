@@ -1,0 +1,45 @@
+{
+  "number": 16,
+  "id": "stocks",
+  "title": "TickerTrail: Stock Watchlist Analytics",
+  "context": "Retail investors track watchlists on trading apps. Simple analytics (best trade, spans, budgets) are classic array problems.",
+  "input": "Daily closing prices per stock; two exchanges’ tick lists; a budget.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Duplicate trade confirmations",
+      "requirement": "Order ids confirmed twice (count array)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Spend a budget",
+      "requirement": "Choose stocks (one share each) whose prices use a Rs 5 000 budget as fully as possible (subset sum)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Best single trade",
+      "requirement": "Maximum profit buying before selling (running minimum)."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Merge two exchanges",
+      "requirement": "Merge two time-sorted tick lists into one timeline."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Price on a date",
+      "requirement": "Find a trading day in the sorted date list (lower bound)."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Stock span",
+      "requirement": "Consecutive days ending today with price ≤ today."
+    }
+  ]
+}

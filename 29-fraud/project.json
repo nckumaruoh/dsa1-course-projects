@@ -1,0 +1,45 @@
+{
+  "number": 29,
+  "id": "fraud",
+  "title": "SafePay: UPI Fraud Monitor",
+  "context": "Payment networks screen transactions in real time for duplicates, bursts, unusual amounts and mule-account patterns.",
+  "input": "Transactions (account, time, amount, merchant).",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Duplicate transactions",
+      "requirement": "Transaction ids seen twice (count array)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Matching a flagged amount",
+      "requirement": "Count sets of transfers totalling exactly a flagged amount (backtracking)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Exact-amount runs",
+      "requirement": "Count consecutive runs summing exactly to a target (prefix + map)."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Fastest Rs 50 000",
+      "requirement": "Shortest burst of consecutive transactions reaching Rs 50 000."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Transactions in a window",
+      "requirement": "Sorted times: count in [t1, t2)."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Rolling maximum amount",
+      "requirement": "Sliding window maximum per account."
+    }
+  ]
+}

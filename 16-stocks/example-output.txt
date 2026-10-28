@@ -1,0 +1,7 @@
+TickerTrail: Stock Watchlist Analytics
+1. Duplicate trade confirmations: repeats=2, distinct=4, first repeat=9001
+2. Spend a budget: 4950
+3. Best single trade: Interval[value=63, left=3, right=7]
+4. Merge two exchanges: [1, 2, 3, 4, 6, 7, 9, 10]
+5. Price on a date: 5
+6. Stock span: [1, 1, 1, 2, 1, 4, 6]

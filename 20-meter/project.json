@@ -1,0 +1,45 @@
+{
+  "number": 20,
+  "id": "meter",
+  "title": "WattWise: Smart Electricity Billing",
+  "context": "Smart meters report consumption every interval. Utilities bill with slab tariffs, sell recharge packs and flag faults.",
+  "input": "Readings per interval; slab boundaries; recharge pack sizes.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Duplicate readings",
+      "requirement": "Reading ids uploaded twice (count array)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Recharge packs",
+      "requirement": "Fewest prepaid packs of 50, 120 and 200 units for an exact top-up (coin change)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Bill divisibility",
+      "requirement": "Count periods whose usage is a multiple of k (remainder counting)."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Peak demand",
+      "requirement": "Highest consumption over any 3 consecutive intervals."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Slab lookup",
+      "requirement": "Slab for a cumulative usage (lower bound)."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Rolling maximum load",
+      "requirement": "Sliding window maximum for transformer sizing."
+    }
+  ]
+}

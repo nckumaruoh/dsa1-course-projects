@@ -1,0 +1,7 @@
+TrendTag: Social Hashtag Trends
+1. Most used tag: most frequent=3 (count 3), distinct=4
+2. Thread engagement: 207
+3. Posts in any hours: [5410, 7530]
+4. Variant grouping: [[iplfinal, finalipl], [goat, toga], [rcb, bcr], [csk]]
+5. Posts in a time window: 4
+6. Top trends: [3, 5, 1]

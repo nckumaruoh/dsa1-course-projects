@@ -1,0 +1,45 @@
+{
+  "number": 14,
+  "id": "bus",
+  "title": "BusBuddy: Route and Timetable Planner",
+  "context": "City bus apps answer 'when is the next bus?' and help operators plan trips and depots along a corridor.",
+  "input": "Sorted departures per stop; passenger counts; trip windows; depot candidates.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Busiest boarding stop",
+      "requirement": "Boardings per stop with a count array."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Routes through the grid",
+      "requirement": "Count monotone routes avoiding closed roads (memo DP)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Passengers on board",
+      "requirement": "Boardings/alightings along the route via a difference array."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Most trips for one bus",
+      "requirement": "Activity selection over trip windows."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "Depot spacing",
+      "requirement": "Place 3 depots on candidate markers maximising the minimum gap."
+    },
+    {
+      "source_week": 10,
+      "teaching_week": 9,
+      "title": "Operating hours",
+      "requirement": "Merge overlapping service windows into operating hours."
+    }
+  ]
+}

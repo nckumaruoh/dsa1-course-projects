@@ -1,0 +1,45 @@
+{
+  "number": 6,
+  "id": "mess",
+  "title": "MessVoice: Hostel Feedback Analyzer",
+  "context": "Hostel messes collect short text feedback through a form. The committee wants the common complaints, keyword alerts and clean data.",
+  "input": "Feedback strings, word ids, ratings, dates.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Most common complaint word",
+      "requirement": "Word frequencies with a count array over word ids."
+    },
+    {
+      "source_week": 3,
+      "teaching_week": 3,
+      "title": "Palindrome coupon codes",
+      "requirement": "Validate palindromic coupon codes recursively, ignoring punctuation and case."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Merge two feedback forms",
+      "requirement": "Merge date-sorted entries from the paper form and the online form in one pass."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Keyword alerts",
+      "requirement": "Count occurrences of a phrase such as 'cold food' in the day’s feedback (KMP)."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Ratings in a band",
+      "requirement": "Sorted ratings: count entries with rating in [2, 4) using two lower bounds."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Clean formatting",
+      "requirement": "Validate bracketed tags like [veg](spicy) in entries with a stack."
+    }
+  ]
+}

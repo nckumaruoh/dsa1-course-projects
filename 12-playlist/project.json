@@ -1,0 +1,45 @@
+{
+  "number": 12,
+  "id": "playlist",
+  "title": "TuneLoop: Music Playlist Engine",
+  "context": "Streaming apps manage queues, 'recently played' and offline caches. Each of these maps to an array or linked structure.",
+  "input": "Songs (id, duration, plays, artist); listening history as an array of ids.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Most played song",
+      "requirement": "Plays per song with a count array."
+    },
+    {
+      "source_week": 3,
+      "teaching_week": 3,
+      "title": "Party elimination game",
+      "requirement": "Josephus-style elimination round over a circle of songs (recurrence)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Queue duration",
+      "requirement": "Total duration of any range of the queue with prefix sums."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "At most two artists",
+      "requirement": "Longest stretch of history with at most 2 distinct artists."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Song at a given time",
+      "requirement": "Which song plays at second t: lower bound on cumulative durations."
+    },
+    {
+      "source_week": 11,
+      "teaching_week": 11,
+      "title": "Offline cache",
+      "requirement": "Keep the last C played songs offline (LRU)."
+    }
+  ]
+}

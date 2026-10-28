@@ -1,0 +1,45 @@
+{
+  "number": 7,
+  "id": "fitness",
+  "title": "StepUp: Fitness Tracker Coach",
+  "context": "Smartwatches record steps and heart rate every minute. A coaching app finds streaks, best weeks and fair goals.",
+  "input": "Daily steps array; per-minute heart-rate array; workout durations.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Favourite activity",
+      "requirement": "Count sessions per activity type (count array); report the most frequent."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Exactly 60 minutes",
+      "requirement": "Count ways to pick workouts (each at most once) totalling exactly 60 minutes (backtracking)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Best streak above goal",
+      "requirement": "Maximum-sum run of (steps − goal)."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Best 7-day week",
+      "requirement": "Highest total over any 7 consecutive days (fixed window)."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "A fair daily goal",
+      "requirement": "Largest daily goal met on at least 5 of 7 days (binary search on the goal)."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Peak heart rate",
+      "requirement": "Rolling maximum heart rate over 3-minute windows (monotonic deque)."
+    }
+  ]
+}

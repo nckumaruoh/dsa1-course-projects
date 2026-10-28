@@ -1,0 +1,45 @@
+{
+  "number": 28,
+  "id": "editor",
+  "title": "NoteNest: Text Editor Core",
+  "context": "Every editor and notes app needs word counts, find, diffs, autocorrect and bracket matching. Each is a data-structure exercise.",
+  "input": "Document as a string; paragraph word counts; line lengths.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Most used word",
+      "requirement": "Word frequencies over word ids."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Autocorrect distance",
+      "requirement": "Edit distance between a word and a suggestion."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Words in any paragraphs",
+      "requirement": "Prefix sums of per-paragraph word counts."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Find all",
+      "requirement": "Count occurrences of a search term (KMP)."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Jump to an offset",
+      "requirement": "Line containing character offset k: lower bound on cumulative line ends."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Bracket matching",
+      "requirement": "Highlight unmatched brackets with a stack."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "number": 17,
+  "id": "hashtags",
+  "title": "TrendTag: Social Hashtag Trends",
+  "context": "Social platforms surface trending hashtags and group spelling variants. All of it starts with counting and windows.",
+  "input": "Posts as strings; tag ids with timestamps; reply-thread trees.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Most used tag",
+      "requirement": "Counts per tag id; report the top tag."
+    },
+    {
+      "source_week": 3,
+      "teaching_week": 3,
+      "title": "Thread engagement",
+      "requirement": "Total likes in a nested reply thread (post-order recursion)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Posts in any hours",
+      "requirement": "Prefix sums over posts per hour."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Variant grouping",
+      "requirement": "Group anagram variants of tags."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Posts in a time window",
+      "requirement": "Sorted timestamps: count posts in [t1, t2) with two lower bounds."
+    },
+    {
+      "source_week": 10,
+      "teaching_week": 9,
+      "title": "Top trends",
+      "requirement": "k most frequent tags (bucket sort by frequency, or a heap)."
+    }
+  ]
+}

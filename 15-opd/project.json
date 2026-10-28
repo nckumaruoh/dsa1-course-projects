@@ -1,0 +1,45 @@
+{
+  "number": 15,
+  "id": "opd",
+  "title": "CareQueue: Hospital OPD Tokens",
+  "context": "Hospital out-patient departments issue tokens and display waiting times. Administrators decide how many doctors to schedule.",
+  "input": "Arrivals per minute, consultation times, department tree.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Duplicate tokens",
+      "requirement": "Token numbers issued twice by a faulty kiosk (count array)."
+    },
+    {
+      "source_week": 3,
+      "teaching_week": 3,
+      "title": "Department totals",
+      "requirement": "Patients per department in a nested department tree (post-order recursion)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Patients in any hours",
+      "requirement": "Prefix sums over hourly arrivals."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Busiest two hours",
+      "requirement": "Highest 2-hour total (fixed window)."
+    },
+    {
+      "source_week": 9,
+      "teaching_week": 8,
+      "title": "Consultation capacity",
+      "requirement": "Minimum patients per slot so the day’s patients, in arrival order, are seen within 5 slots."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Token queue",
+      "requirement": "Circular-array FIFO; simulate 2 doctors."
+    }
+  ]
+}

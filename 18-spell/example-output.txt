@@ -1,0 +1,7 @@
+TypeRight: Spell Checker and Autocomplete
+1. Letter frequencies: most frequent=4 (count 3), distinct=4
+2. Edit distance: 2
+3. Merge two dictionaries: [3, 5, 8, 8, 15, 21, 30]
+4. Similarity score: 5
+5. Autocomplete range: 3
+6. Most common typos: [2, 5]

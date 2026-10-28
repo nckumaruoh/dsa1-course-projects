@@ -1,0 +1,7 @@
+FairFare: Ride-Share Surge Analyzer
+1. Duplicate ride requests: repeats=3, distinct=4, first repeat=88
+2. Shift plans: 17
+3. Worst shortage stretch: Interval[value=13, left=1, right=4]
+4. Shortest stretch reaching 50 rides: 5
+5. Driver rate needed: 80
+6. Surge cap: [15, 15, 18, 18, 18]

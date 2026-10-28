@@ -1,0 +1,7 @@
+DashRoute: Food-Delivery Rider Batching
+1. Duplicate orders: repeats=2, distinct=5, first repeat=42
+2. Fill a rider’s bag: 10
+3. Pair short trips: [2, 7]
+4. Fastest 50 orders: 5
+5. Minimum delivery rate: 23
+6. Merge rider shifts: [[9, 16], [18, 23]]

@@ -1,0 +1,45 @@
+{
+  "number": 24,
+  "id": "bloodbank",
+  "title": "LifeLink: Blood Bank Inventory",
+  "context": "Blood units expire. Banks issue the oldest compatible unit first and must find units across centres fast.",
+  "input": "Units (group, collection day, expiry day) per centre; requests.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Most requested group",
+      "requirement": "Requests per blood group id (count array)."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Exact volume",
+      "requirement": "Count ways to fulfil a request of exactly 800 ml from available bags (backtracking)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Units usable each day",
+      "requirement": "Each unit is usable [collection, expiry): difference array."
+    },
+    {
+      "source_week": 6,
+      "teaching_week": 6,
+      "title": "Merge centre stocks",
+      "requirement": "Merge two centres’ expiry-sorted lists."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Units expiring soon",
+      "requirement": "Count units expiring in [10, 15) with two lower bounds."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Request queue",
+      "requirement": "Serve requests FIFO with 2 technicians."
+    }
+  ]
+}
