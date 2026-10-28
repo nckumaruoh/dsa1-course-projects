@@ -10,7 +10,7 @@ Windows PowerShell: `./run.ps1`
 
 Linux/macOS: `sh run.sh`
 
-The scripts compile all `src/*.java` and `test/*.java`, run project checks and the applicable algorithm-family regression suites, then execute `ProjectApp`. A failed compile or test stops the script. To run only the demo after compilation: `java -cp build ProjectApp`.
+The scripts explicitly use UTF-8 for Java output. The scripts compile all `src/*.java` and `test/*.java`, run project checks and the applicable algorithm-family regression suites, then execute `ProjectApp`. A failed compile or test stops the script. To run only the demo after compilation: `java "-Dfile.encoding=UTF-8" "-Dstdout.encoding=UTF-8" -cp build ProjectApp`.
 
 ## Project data and integration
 
@@ -56,9 +56,11 @@ CoreBasics.frequent(new int[]{12,4,12,7,4,12,9})
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Count using array for fixed small universe or a hash map for sparse IDs. On ties choose the smaller ID; frequency is not the numerical ID. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
+**Example reasoning:** Counting each distinct ID gives {4: 2, 7: 1, 9: 1, 12: 3}; a frequency tie chooses the smaller ID.
 
-**Invariant and cost:** Count using array for fixed small universe or a hash map for sparse IDs. On ties choose the smaller ID; frequency is not the numerical ID. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
+**Algorithm:** Count all occurrences, then retain the highest-frequency ID, choosing the smaller numeric ID on ties. The hash implementation supports sparse IDs; frequentCountArray supplies the explicit bounded-universe comparison.
+
+**Invariant and cost:** Processed counts are exact. The winning count/ID pair is updated whenever its ordering improves. Expected O(n) hashing time and O(d) entries; the count-array alternative takes O(n+U) time and O(U) space, including initialization.
 
 **Additional cases:** [3,1,3,1] →mostFrequent1,count2,distinct2; [0] →ID0,count1,distinct1.
 
@@ -86,9 +88,11 @@ CoreBasics.palindrome("Mess-Code: edoc ssem")
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Move endpoints past ignored characters, compare lower-case characters and shrink. Small recursive trace is allowed; iterative implementation avoids long-input call depth.
+**Example reasoning:** After removing punctuation and folding case, the text is 'messcodeedocssem'; compare it with its reversal.
 
-**Invariant and cost:** O(L) time/O(1) iterative extra space. Explain your counted operation, state, base/undo rule and boundary convention.
+**Algorithm:** Use two pointers. Skip non-alphanumeric characters and compare case-folded endpoint characters, moving inward after a match. This iterative full-input path avoids a recursion-depth dependency.
+
+**Invariant and cost:** All characters outside the current endpoints have already matched or been ignored. O(L) time and O(1) auxiliary space for L Java characters. The stated behavior follows Character.isLetterOrDigit/toLowerCase; empty filtered text is valid.
 
 **Additional cases:** "A-b-a" → true; "ab" → false.
 
@@ -116,9 +120,11 @@ W06CatalogueReference.merge(new int[]{1,3,4,8},new int[]{2,3,6,9})
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Two read indices plus output index; append the remaining suffix after either input ends.
+**Example reasoning:** Sorting the concatenated multiset independently gives [1, 2, 3, 3, 4, 6, 8, 9]; every duplicate occurrence must remain.
 
-**Invariant and cost:** O(a+b) time; O(a+b) returned storage. Explain pointer/greedy progress,invariant,copy/output storage and exact boundary convention;recursion/undo prompts are N/A.
+**Algorithm:** Validate both sorted arrays and merge them with two read pointers. Choose from the left on equality; once one array ends, copy the remaining suffix of the other.
+
+**Invariant and cost:** The written prefix contains the smallest consumed multiset entries in sorted order. O(n+m) time, O(n+m) returned storage and O(1) additional workspace. Inputs are preserved and duplicate occurrences remain.
 
 **Additional cases:** [1,3],[2,3] → [1,2,3,3]; [],[] → [].
 
@@ -146,9 +152,11 @@ Week7ProjectReference.count("rice was cold food cold food again","cold food")
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Build LPS; after a complete match, fall back to lps[m−1] to keep overlaps. Adapt LC28 first-match starter to continue counting. Create a complete Java class with main and run all three cases. See W07 Java and the matching skill method for a starting pattern. Complete tested faculty source for this family:W07 Project Reference/private package. Implement the full ONE chosen increment;common rolling model is not a compulsory extra project.
+**Example reasoning:** Direct substring comparisons match at start indices [9, 19]; overlaps count separately.
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Build the pattern’s prefix/failure array, then scan the text using KMP. On a mismatch, reuse the longest remaining prefix; after a match, fall back to its proper prefix rather than resetting to zero, so overlaps count.
+
+**Invariant and cost:** The matched-length state is the longest pattern prefix matching the current text suffix. O(textLength+patternLength) time and O(patternLength) storage. The pattern must be nonempty.
 
 **Additional cases:** text="aaaa",pattern="aa" → 3; text="abc",pattern="z" → 0.
 
@@ -176,9 +184,11 @@ W08CatalogueReference.count(new int[]{1,1,2,2,3,3,3,4,5,5},2,4)
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Compute lower(hi)−lower(lo), not a first/last matching-index scan. Both bounds may validly equal n. Adapt ProjectW08 or the matching bound-based skill starter, add a complete main and run the source example plus boundary cases. Faculty complete code:W08 Project Reference/private package. W08CatalogueReference one-call adapters INCLUDE validation/copy build per call;query O(log n) applies only after retaining a built index. Raw static bound helpers assume sorted validated input. Implement ONE chosen source increment;common model is support.
+**Example reasoning:** The half-open interval [2,4) includes [2, 2, 3, 3, 3]; duplicates are retained and the upper endpoint is excluded.
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Find the first position at least lo and first at least hi; their difference counts the half-open interval [lo,hi). Equal endpoints return zero. The adapter copies/validates the source before querying.
+
+**Invariant and cost:** Each lower-bound search preserves its partition invariant. Numeric one-call cost is O(n+log(n+1)) time and O(n) space; retained-index queries are O(log(n+1)). For words, add validation of total characters and string-comparison character costs. Duplicates count as separate entries.
 
 **Additional cases:** sorted=[10,10,20,30,30],range [10,30) → 3; [20,20) → 0; empty input → 0.
 
@@ -206,13 +216,17 @@ Week12ProjectReference.validBrackets("[veg](spicy){menu}[x(y])")
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Push opener type (and character index for editor highlighting). On closer require the matching top; retain the first mismatch position for diagnosis. For the editor expose unmatched bracket positions as a UI extension; source acceptance sample is boolean.
+**Example reasoning:** Ignoring non-brackets leaves '[](){}[(])'; repeatedly removing adjacent matched pairs leaves '[(])', so validity is False.
 
-**Invariant and cost:** O(L) time/O(L) stack; diagnostic positions need O(L) output in worst case.
+**Algorithm:** Ignore ordinary text characters. Push opening brackets; each closing bracket must match the most recent unclosed opener. Reject an unmatched or wrong-type close and require an empty stack at the end.
+
+**Invariant and cost:** The stack is exactly the sequence of unclosed openers. O(L) time and O(L) worst-case space. Balanced counts alone are insufficient: nesting order and bracket type both matter.
 
 **Additional cases:** "[veg](spicy)" →true; "([)]" →false; "abc" →true; "((" →false.
 
 ## Reproduce and inspect
+
+Cost notation: n is the input count, d the number of distinct IDs, U a declared ID universe, B capacity, T a target, and q the query count. R and C denote grid rows/columns; in cache costs C instead denotes cache capacity. Output storage is identified separately where relevant.
 
 Read [test-results.txt](test-results.txt) for the completed run and [example-output.txt](example-output.txt) for the integrated demonstration. `ProjectTest.java` checks this project's six fixtures and available listed additional cases. `CoreBasicsTest.java` supplies independent ID/counting, bounded-tree, flood-fill and recurrence oracles. The `WxxProjectTests.java` files exercise the relevant algorithm families with their owned course regression cases.
 
@@ -220,7 +234,7 @@ Numeric ID analysis also exposes `frequentCountArray(ids,U)` and `repeatsCountAr
 
 The tree implementation additionally validates repeated node identities and depth using an identity set. Its actual auxiliary cost is O(n+h), rather than the O(h) trusted-tree recursion alone stated in the original contract. This rejects shared-child DAGs and protects the bounded recursion. Flood fill uses an explicit queue; full-size palindrome and Josephus operations use loops.
 
-Convenience methods that construct a frozen prefix or sorted index include construction/validation cost. Reuse `PulseLogWeek5`, `W05CatalogueReference.GridIndex`, `Week8ProjectReference` or `W08WordIndex` directly for repeated O(1) range queries or O(log n) bound queries after their O(n) build. String comparisons also include character work. The source contract and actual checked implementation determine the supported bounds.
+Construction and per-query costs are stated beside each feature above. Only the support classes present in this folder are needed to run this project.
 
 ## Similar applications
 
@@ -231,3 +245,7 @@ meal feedback summaries; coupon validation; text-search tools. These are applica
 This is a complete implementation of the six specified course increments and a console demonstration. It is not a deployed production service. It has no database, UI, external API integration or real personal data. Inputs beyond the documented synthetic bounds are rejected; integer overflow checks are retained where specified. Safety, financial, medical and placement scenarios remain synthetic algorithm exercises, with no real eligibility or operational decisions.
 
 The implementations reuse this course's owned, reviewed Java primitives. Their original class names retain traceability to the source catalogue; they are now included under the explicit authorization to publish completed project solutions. Private assessment sheets, student records and weekly lab answer keys are excluded.
+
+## Audit verification
+
+This project’s documented PowerShell and shell commands, six examples and source-matched explanations are checked in the [course audit report](../AUDIT_REPORT.md). The shell command is also exercised in Linux CI; local shell checks on Windows use Git for Windows `sh`.

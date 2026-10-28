@@ -10,7 +10,7 @@ Windows PowerShell: `./run.ps1`
 
 Linux/macOS: `sh run.sh`
 
-The scripts compile all `src/*.java` and `test/*.java`, run project checks and the applicable algorithm-family regression suites, then execute `ProjectApp`. A failed compile or test stops the script. To run only the demo after compilation: `java -cp build ProjectApp`.
+The scripts explicitly use UTF-8 for Java output. The scripts compile all `src/*.java` and `test/*.java`, run project checks and the applicable algorithm-family regression suites, then execute `ProjectApp`. A failed compile or test stops the script. To run only the demo after compilation: `java "-Dfile.encoding=UTF-8" "-Dstdout.encoding=UTF-8" -cp build ProjectApp`.
 
 ## Project data and integration
 
@@ -56,9 +56,11 @@ CoreBasics.frequent(new int[]{1,4,1,0,6,1,4,1,2,0})
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Count using array for fixed small universe or a hash map for sparse IDs. On ties choose the smaller ID; frequency is not the numerical ID. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
+**Example reasoning:** Counting each distinct ID gives {0: 2, 1: 4, 2: 1, 4: 2, 6: 1}; a frequency tie chooses the smaller ID.
 
-**Invariant and cost:** Count using array for fixed small universe or a hash map for sparse IDs. On ties choose the smaller ID; frequency is not the numerical ID. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
+**Algorithm:** Count all occurrences, then retain the highest-frequency ID, choosing the smaller numeric ID on ties. The hash implementation supports sparse IDs; frequentCountArray supplies the explicit bounded-universe comparison.
+
+**Invariant and cost:** Processed counts are exact. The winning count/ID pair is updated whenever its ordering improves. Expected O(n) hashing time and O(d) entries; the count-array alternative takes O(n+U) time and O(U) space, including initialization.
 
 **Additional cases:** [3,1,3,1] →mostFrequent1,count2,distinct2; [0] →ID0,count1,distinct1.
 
@@ -86,9 +88,11 @@ W04CatalogueReference.ways(new int[]{1,2,4,6},8)
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** ways[0]=1; for each total, sum ways[total−choice] over choices. Use checked long addition.
+**Example reasoning:** Classify sequences by their final shot/choice. Counts for remaining totals 0..8 are [1, 1, 2, 3, 6, 10, 19, 33, 60]; different orders remain distinct.
 
-**Invariant and cost:** O(nT) time, O(T) storage. Explain your counted operation, state, base/undo rule and boundary convention.
+**Algorithm:** Set ways[0]=1. For each total t in increasing order, add ways[t-choice] for every affordable choice. Classifying by the last choice counts different orders separately and permits repeated choices.
+
+**Invariant and cost:** All dependencies use smaller totals because choices are positive. O((m+1)(T+1)) time and O(T+m+1) storage including duplicate-choice validation. Checked long addition detects overflow; zero target has one empty sequence.
 
 **Additional cases:** choices=[1,2],target=3 → 3 ([1,1,1],[1,2],[2,1]); target=0 → 1.
 
@@ -116,9 +120,11 @@ W05CatalogueReference.bestInterval(new long[]{-2L,1L,-4L,4L,-1L,7L,-5L,2L})
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Track best interval ending here, then best seen. All-negative inputs must retain their largest element.
+**Example reasoning:** Enumerating every nonempty interval finds sum 10 on inclusive indices 3..5, containing [4, -1, 7].
 
-**Invariant and cost:** O(n) time/O(1) workspace excluding returned endpoints. Explain your counted operation, prefix/ending-state invariant and exact boundary conversion; recursion/base/undo is N/A. Separate preprocessing, per-query and output costs.
+**Algorithm:** Track the best nonempty interval ending at the current index. Either extend the previous ending interval or start at the current value; update the best overall sum and inclusive endpoints only on strict improvement.
+
+**Invariant and cost:** The ending state is optimal among intervals ending here, so the global best is optimal among all processed intervals. O(n) time and O(1) auxiliary space excluding the constant-size Interval result. All-negative input returns its largest value; it does not select an empty interval.
 
 **Additional cases:** [-2,-1] → best=-1 at 1..1; [4] → best=4 at 0..0.
 
@@ -146,9 +152,11 @@ Week7ProjectReference.bestWindow(new int[]{6,9,4,12,7,15,3,10},3)
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Keep one long sum; add entering and subtract departing value; compare only complete windows. Create a complete Java class with main and run all three cases. See W07 Java and the matching skill method for a starting pattern. Complete tested faculty source for this family:W07 Project Reference/private package. Implement the full ONE chosen increment;common rolling model is not a compulsory extra project.
+**Example reasoning:** Complete width-3 window totals are [19, 25, 23, 34, 25, 28]; the first maximum gives sum/start [34, 3].
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Maintain the sum of exactly k consecutive values: add each entering value and subtract the departing value. Compare only complete windows. Update the best start only on strict improvement to keep the earliest tie.
+
+**Invariant and cost:** The running sum equals the current complete window. O(n) time and O(1) workspace, excluding the two-element result. Signed values are valid; initializing from a real window rather than zero handles all-negative input.
 
 **Additional cases:** [1,2,3],k=2 → [5,1]; [5],k=1 → [5,0].
 
@@ -176,9 +184,11 @@ W08CatalogueReference.lower(new int[]{6,15,19,31,38,53,56,66},50)
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Use [lo,hi), hi=n; sorted[mid]<target advances lo to mid+1, otherwise hi=mid. Preserve sortedness precondition. Adapt ProjectW08 or the matching bound-based skill starter, add a complete main and run the source example plus boundary cases. Faculty complete code:W08 Project Reference/private package. W08CatalogueReference one-call adapters INCLUDE validation/copy build per call;query O(log n) applies only after retaining a built index. Raw static bound helpers assume sorted validated input. Implement ONE chosen source increment;common model is support.
+**Example reasoning:** A direct left-to-right scan first finds a value at least 50 at index 5; n=8 is a valid end sentinel.
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Copy and validate the sorted array, then search a half-open unclassified interval [l,r). If a[mid]<target, move l past mid; otherwise retain mid by setting r=mid. Return the meeting boundary.
+
+**Invariant and cost:** Values before l are below target and those at/after r are at least target. A one-call adapter is O(n+log(n+1)) time and O(n) frozen-copy space. Reuse the constructed index for O(log(n+1)) numeric queries. The valid return n must not be dereferenced.
 
 **Additional cases:** sorted=[10,10,20],target=10 → 0; target=21 → 3 (end sentinel); sorted=[],target=10 → 0.
 
@@ -206,13 +216,17 @@ Week10ProjectReference.rank(new String[]{"Rohit","Gill","Kohli","Pant"},new int[
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** See the checked Java implementation and regression suite.
+**Example reasoning:** Ordering (primary descending, secondary ascending, original index) gives source indices [1, 2, 0, 3]; complete ties preserve input order.
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Sort original record indices by primary score descending, then the configured secondary direction, then original index. Read names through that ordering so the aligned source arrays remain unchanged.
+
+**Invariant and cost:** The comparator defines a total order while original index preserves complete ties. O(n log n) comparisons and O(n) index/sort/result storage. Integer.compare avoids overflow; this returns names in order rather than numeric rank labels.
 
 **Additional cases:** names=[A,B,C],primary=[10,10,10],secondary=[2,2,1]: cricket →[C,A,B]; exams →[A,B,C]. A and B retain source order on full ties.
 
 ## Reproduce and inspect
+
+Cost notation: n is the input count, d the number of distinct IDs, U a declared ID universe, B capacity, T a target, and q the query count. R and C denote grid rows/columns; in cache costs C instead denotes cache capacity. Output storage is identified separately where relevant.
 
 Read [test-results.txt](test-results.txt) for the completed run and [example-output.txt](example-output.txt) for the integrated demonstration. `ProjectTest.java` checks this project's six fixtures and available listed additional cases. `CoreBasicsTest.java` supplies independent ID/counting, bounded-tree, flood-fill and recurrence oracles. The `WxxProjectTests.java` files exercise the relevant algorithm families with their owned course regression cases.
 
@@ -220,7 +234,7 @@ Numeric ID analysis also exposes `frequentCountArray(ids,U)` and `repeatsCountAr
 
 The tree implementation additionally validates repeated node identities and depth using an identity set. Its actual auxiliary cost is O(n+h), rather than the O(h) trusted-tree recursion alone stated in the original contract. This rejects shared-child DAGs and protects the bounded recursion. Flood fill uses an explicit queue; full-size palindrome and Josephus operations use loops.
 
-Convenience methods that construct a frozen prefix or sorted index include construction/validation cost. Reuse `PulseLogWeek5`, `W05CatalogueReference.GridIndex`, `Week8ProjectReference` or `W08WordIndex` directly for repeated O(1) range queries or O(log n) bound queries after their O(n) build. String comparisons also include character work. The source contract and actual checked implementation determine the supported bounds.
+Construction and per-query costs are stated beside each feature above. Only the support classes present in this folder are needed to run this project.
 
 ## Similar applications
 
@@ -231,3 +245,7 @@ sports score analysis; tournament leaderboards; live match summaries. These are 
 This is a complete implementation of the six specified course increments and a console demonstration. It is not a deployed production service. It has no database, UI, external API integration or real personal data. Inputs beyond the documented synthetic bounds are rejected; integer overflow checks are retained where specified. Safety, financial, medical and placement scenarios remain synthetic algorithm exercises, with no real eligibility or operational decisions.
 
 The implementations reuse this course's owned, reviewed Java primitives. Their original class names retain traceability to the source catalogue; they are now included under the explicit authorization to publish completed project solutions. Private assessment sheets, student records and weekly lab answer keys are excluded.
+
+## Audit verification
+
+This project’s documented PowerShell and shell commands, six examples and source-matched explanations are checked in the [course audit report](../AUDIT_REPORT.md). The shell command is also exercised in Linux CI; local shell checks on Windows use Git for Windows `sh`.

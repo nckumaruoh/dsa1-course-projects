@@ -2,6 +2,8 @@
 
 Local work is tracked separately from GitHub publication and website linking.
 
+The subsequent one-by-one execution, explanation and website-link audit is recorded in [AUDIT_REPORT.md](AUDIT_REPORT.md).
+
 ## 01. CampusBite: Canteen Order Analytics
 
 - [x] specification review

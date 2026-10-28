@@ -18,7 +18,20 @@
     "folder": "01-campusbite",
     "verified_at": "2026-10-28T06:27:04.322371+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/01-campusbite",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Reviewed six worked explanations"
+      ]
+    }
   },
   {
     "number": 2,
@@ -39,7 +52,20 @@
     "folder": "02-metro",
     "verified_at": "2026-10-28T06:04:20.405366+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/02-metro",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 3,
@@ -60,7 +86,20 @@
     "folder": "03-cricket",
     "verified_at": "2026-10-28T06:04:22.928413+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/03-cricket",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 4,
@@ -81,7 +120,20 @@
     "folder": "04-delivery",
     "verified_at": "2026-10-28T06:04:25.510381+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/04-delivery",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 5,
@@ -102,7 +154,20 @@
     "folder": "05-library",
     "verified_at": "2026-10-28T06:04:28.032824+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/05-library",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 6,
@@ -123,7 +188,20 @@
     "folder": "06-mess",
     "verified_at": "2026-10-28T06:04:30.679231+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/06-mess",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 7,
@@ -144,7 +222,20 @@
     "folder": "07-fitness",
     "verified_at": "2026-10-28T06:04:33.383777+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/07-fitness",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 8,
@@ -165,7 +256,20 @@
     "folder": "08-parking",
     "verified_at": "2026-10-28T06:04:36.520272+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/08-parking",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 9,
@@ -186,7 +290,20 @@
     "folder": "09-aqi",
     "verified_at": "2026-10-28T06:04:39.300698+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/09-aqi",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 10,
@@ -207,7 +324,21 @@
     "folder": "10-flashsale",
     "verified_at": "2026-10-28T06:04:41.971917+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/10-flashsale",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces",
+        "Normal cache replay avoids per-request integrity scans; maximum public trace tested"
+      ]
+    }
   },
   {
     "number": 11,
@@ -228,7 +359,20 @@
     "folder": "11-exams",
     "verified_at": "2026-10-28T06:04:44.674778+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/11-exams",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 12,
@@ -249,7 +393,21 @@
     "folder": "12-playlist",
     "verified_at": "2026-10-28T06:04:47.161954+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/12-playlist",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces",
+        "Normal cache replay avoids per-request integrity scans; maximum public trace tested"
+      ]
+    }
   },
   {
     "number": 13,
@@ -270,7 +428,20 @@
     "folder": "13-surge",
     "verified_at": "2026-10-28T06:04:49.849167+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/13-surge",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 14,
@@ -291,7 +462,20 @@
     "folder": "14-bus",
     "verified_at": "2026-10-28T06:04:52.458912+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/14-bus",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 15,
@@ -312,7 +496,20 @@
     "folder": "15-opd",
     "verified_at": "2026-10-28T06:04:54.923012+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/15-opd",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 16,
@@ -333,7 +530,20 @@
     "folder": "16-stocks",
     "verified_at": "2026-10-28T06:04:57.861985+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/16-stocks",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 17,
@@ -354,7 +564,20 @@
     "folder": "17-hashtags",
     "verified_at": "2026-10-28T06:05:00.387905+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/17-hashtags",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 18,
@@ -375,7 +598,20 @@
     "folder": "18-spell",
     "verified_at": "2026-10-28T06:05:03.055742+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/18-spell",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 19,
@@ -396,7 +632,20 @@
     "folder": "19-tickets",
     "verified_at": "2026-10-28T06:05:05.716434+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/19-tickets",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 20,
@@ -417,7 +666,20 @@
     "folder": "20-meter",
     "verified_at": "2026-10-28T06:05:08.525017+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/20-meter",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 21,
@@ -438,7 +700,20 @@
     "folder": "21-judge",
     "verified_at": "2026-10-28T06:05:11.722691+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/21-judge",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 22,
@@ -459,7 +734,21 @@
     "folder": "22-cloud",
     "verified_at": "2026-10-28T06:05:14.568663+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/22-cloud",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces",
+        "Normal cache replay avoids per-request integrity scans; maximum public trace tested"
+      ]
+    }
   },
   {
     "number": 23,
@@ -480,7 +769,20 @@
     "folder": "23-mandi",
     "verified_at": "2026-10-28T06:05:18.348674+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/23-mandi",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 24,
@@ -501,7 +803,20 @@
     "folder": "24-bloodbank",
     "verified_at": "2026-10-28T06:05:21.737893+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/24-bloodbank",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 25,
@@ -522,7 +837,20 @@
     "folder": "25-moderation",
     "verified_at": "2026-10-28T06:05:24.777587+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/25-moderation",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 26,
@@ -543,7 +871,20 @@
     "folder": "26-warehouse",
     "verified_at": "2026-10-28T06:05:27.539942+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/26-warehouse",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 27,
@@ -564,7 +905,20 @@
     "folder": "27-placement",
     "verified_at": "2026-10-28T06:05:30.340886+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/27-placement",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 28,
@@ -585,7 +939,20 @@
     "folder": "28-editor",
     "verified_at": "2026-10-28T06:05:33.059354+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/28-editor",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 29,
@@ -606,7 +973,20 @@
     "folder": "29-fraud",
     "verified_at": "2026-10-28T06:05:35.752797+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/29-fraud",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   },
   {
     "number": 30,
@@ -627,6 +1007,19 @@
     "folder": "30-harvest",
     "verified_at": "2026-10-28T06:05:38.337091+00:00",
     "repository": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/30-harvest",
-    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50"
+    "github_commit": "be6a5e6cc47b26823237bed980fc04bfa8370d50",
+    "audit": {
+      "date": "2026-10-28",
+      "powershell": "passed",
+      "shell": "passed",
+      "manual_commands": "passed",
+      "independent_examples": 6,
+      "explanations_reviewed": 6,
+      "website_folder": "verified",
+      "fixes": [
+        "Explicit UTF-8 scripts and quoted manual JVM options",
+        "Completed six algorithm/invariant/cost explanations and independent worked traces"
+      ]
+    }
   }
 ]

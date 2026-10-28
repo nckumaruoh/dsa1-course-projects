@@ -10,7 +10,7 @@ Windows PowerShell: `./run.ps1`
 
 Linux/macOS: `sh run.sh`
 
-The scripts compile all `src/*.java` and `test/*.java`, run project checks and the applicable algorithm-family regression suites, then execute `ProjectApp`. A failed compile or test stops the script. To run only the demo after compilation: `java -cp build ProjectApp`.
+The scripts explicitly use UTF-8 for Java output. The scripts compile all `src/*.java` and `test/*.java`, run project checks and the applicable algorithm-family regression suites, then execute `ProjectApp`. A failed compile or test stops the script. To run only the demo after compilation: `java "-Dfile.encoding=UTF-8" "-Dstdout.encoding=UTF-8" -cp build ProjectApp`.
 
 ## Project data and integration
 
@@ -56,9 +56,11 @@ CoreBasics.repeats(new String[]{"a9","c4","a9","f1","c4","a9"})
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Use a frequency/seen map, or coordinate-compress IDs once and count with an array. Mark firstRepeat only on the first repeated encounter. Preserve input. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
+**Example reasoning:** The repeated encounters, in arrival order, are ['a9', 'c4', 'a9']; each encounter after the first contributes one repeat.
 
-**Invariant and cost:** Use a frequency/seen map, or coordinate-compress IDs once and count with an array. Mark firstRepeat only on the first repeated encounter. Preserve input. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
+**Algorithm:** Keep the IDs already seen. An encounter whose ID is already present adds one repeat; remember the first such encounter only once. The distinct count is the size of the seen set. Numeric count-array and quadratic comparison variants are also available.
+
+**Invariant and cost:** Before each encounter, the set contains exactly earlier IDs. The normal hash path uses expected O(n) set operations and O(d) entries, plus string hashing/equality character work. The declared-universe count array uses O(n+U) time and O(U) space. The small quadratic oracle uses O(n²) comparisons.
 
 **Additional cases:** [a,a,a,b,b] →repeats3,distinct2,firstRepeat a; [] →repeats0,distinct0,firstRepeat none.
 
@@ -86,9 +88,11 @@ CoreBasics.total(new CoreBasics.Node(5,new CoreBasics.Node(1200,new CoreBasics.N
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Base null/leaf, recursively add child totals; validate cycles separately if accepting an untrusted graph. Define Node{long own;List<Node>children;}.
+**Example reasoning:** The node-own values are [5, 1200, 800, 950, 300]; adding each once gives 3255. These are not already subtree totals.
 
-**Invariant and cost:** O(nodes) time/O(height) frames for bounded-depth trees. Explain your counted operation, state, base/undo rule and boundary convention.
+**Algorithm:** Post-order recursion adds a node’s own value to its children’s totals. Identity tracking rejects repeated nodes; depth, node-count and nonnegative-value checks enforce the declared tree bounds. Math.addExact rejects overflow.
+
+**Invariant and cost:** Each accepted node is visited once. For n nodes and height h, time is O(n), and actual auxiliary storage is O(n+h): an identity set plus recursion frames. Null root returns zero. A child value is its own contribution, not a precomputed subtree total.
 
 **Additional cases:** root(5) with children a(2),b(3) → 10; null root → 0.
 
@@ -116,9 +120,11 @@ W06CatalogueReference.merge(new int[]{2,5,9,14},new int[]{3,5,11})
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Two read indices plus output index; append the remaining suffix after either input ends.
+**Example reasoning:** Sorting the concatenated multiset independently gives [2, 3, 5, 5, 9, 11, 14]; every duplicate occurrence must remain.
 
-**Invariant and cost:** O(a+b) time; O(a+b) returned storage. Explain pointer/greedy progress,invariant,copy/output storage and exact boundary convention;recursion/undo prompts are N/A.
+**Algorithm:** Validate both sorted arrays and merge them with two read pointers. Choose from the left on equality; once one array ends, copy the remaining suffix of the other.
+
+**Invariant and cost:** The written prefix contains the smallest consumed multiset entries in sorted order. O(n+m) time, O(n+m) returned storage and O(1) additional workspace. Inputs are preserved and duplicate occurrences remain.
 
 **Additional cases:** [1,3],[2,3] → [1,2,3,3]; [],[] → [].
 
@@ -146,9 +152,11 @@ Week7ProjectReference.count("/img/2025/img_01.jpg /img/2026/img_02.jpg","img")
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Build LPS; after a complete match, fall back to lps[m−1] to keep overlaps. Adapt LC28 first-match starter to continue counting. Create a complete Java class with main and run all three cases. See W07 Java and the matching skill method for a starting pattern. Complete tested faculty source for this family:W07 Project Reference/private package. Implement the full ONE chosen increment;common rolling model is not a compulsory extra project.
+**Example reasoning:** Direct substring comparisons match at start indices [1, 10, 22, 31]; overlaps count separately.
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Build the pattern’s prefix/failure array, then scan the text using KMP. On a mismatch, reuse the longest remaining prefix; after a match, fall back to its proper prefix rather than resetting to zero, so overlaps count.
+
+**Invariant and cost:** The matched-length state is the longest pattern prefix matching the current text suffix. O(textLength+patternLength) time and O(patternLength) storage. The pattern must be nonempty.
 
 **Additional cases:** text="aaaa",pattern="aa" → 3; text="abc",pattern="z" → 0.
 
@@ -176,9 +184,11 @@ Week9ProjectReference.min_capacity(new int[]{450,200,380,120,260,300},4)
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Use greedy groups≤rounds and first feasible capacity in [max,sum], long arithmetic. Adapt the matching skill/problem starter or ProjectW09; create complete main, run catalogue and boundary cases. State monotonicity, safe bounds, shrinking measure and adjacent infeasible answer. Full tested faculty implementations:W09 Project Reference/private package. Choose your actual family;capacity grouping,ceil-hour rate,day threshold and spacing are different predicates. Common SLA model is support,not a compulsory additional project.
+**Example reasoning:** Exhaustive contiguous partitions using at most 4 groups yield minimum capacity 560; one partition is [[450], [200], [380, 120], [260, 300]], with loads [450, 200, 500, 560].
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Search the smallest capacity between the largest batch and the total load. A greedy predicate fills each contiguous group until the next batch would exceed capacity, then starts another group. Keep capacities requiring at most rounds groups.
+
+**Invariant and cost:** For a fixed capacity, greedily taking the longest prefix minimizes the number of groups; larger capacity cannot hurt feasibility. O(n log(S-M+1)+n) time and O(1) extra space for total S and largest batch M. Preserve original order; this is not arbitrary bin packing.
 
 **Additional cases:** [7,2,5,10,8],2 →18; rounds1 →32; rounds5 →10. [1000000000,1000000000,1000000000],1 →3000000000.
 
@@ -186,9 +196,9 @@ The actual result appears in [example-output.txt](example-output.txt). ProjectTe
 
 LRU cache of thumbnails; hit ratio. Use a positive-capacity LRU resident set. Each request first looks up the ID, counts a hit only if present, promotes on hit, and loads on miss; evict the least-recent ID when needed. Return hit count/total, ratio and final MRU→LRU IDs.
 
-**Contract:** `String simulate(int[] requests,int capacity); Cache.get(key),put(key,value),order(),integrity(). Values use the nonnegative ID itself for this fixture.`
+**Contract:** `String simulate(int[] requests,int capacity); Week11ProjectReference.LRUCache.get(key), put(key,value), order(), integrity(). Values use the nonnegative ID itself for this fixture.`
 
-**Input limits and conventions:** See the checked Java implementation and regression suite.
+**Input limits and conventions:** Nonnull 0..200000 requests, capacity 1..3000, keys 0..10000. Cache values are 0..100000; -1 denotes a miss. Empty replay has ratio N/A. order() returns a copied MRU-to-LRU key array. integrity() validates reciprocal links and map/list agreement.
 
 ### Worked example
 
@@ -207,13 +217,17 @@ Week11ProjectReference.simulate(new int[]{1,2,1,3,2,1,3},2)
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** See the checked Java implementation and regression suite.
+**Example reasoning:** A plain recency list produces 1 hits and final most-to-least-recent keys [3, 1]; a hit moves its key to the front.
 
-**Invariant and cost:** Map keys and live list nodes are bijective; next/prev reciprocal; size≤C; front MRU/back LRU. get/put average O(1), storageO(C). Debug traversal costsO(C); full-trace debugO(qC).
+**Algorithm:** Use a hash map from key to a doubly linked cache node. get moves a hit to the most-recent front; a missing key is inserted with value equal to its ID, evicting the least-recent tail if full. Normal simulate uses replay with debug disabled.
+
+**Invariant and cost:** The map and linked list contain exactly the same resident keys in recency order. Normal replay takes expected O(n+C) time including the final order snapshot and O(C) storage. Explicit debug replay calls integrity after each request and can take O(nC) time; order/integrity scans are O(C), while individual get/put are expected O(1).
 
 **Additional cases:** requests=[4,4,5,4],C=1 →hits1/4,order[4]; empty,C=2 →hits0/0,ratioN/A,order[]; C=0 →IllegalArgumentException. Add repeated-key update and missing-get-no-change tests.
 
 ## Reproduce and inspect
+
+Cost notation: n is the input count, d the number of distinct IDs, U a declared ID universe, B capacity, T a target, and q the query count. R and C denote grid rows/columns; in cache costs C instead denotes cache capacity. Output storage is identified separately where relevant.
 
 Read [test-results.txt](test-results.txt) for the completed run and [example-output.txt](example-output.txt) for the integrated demonstration. `ProjectTest.java` checks this project's six fixtures and available listed additional cases. `CoreBasicsTest.java` supplies independent ID/counting, bounded-tree, flood-fill and recurrence oracles. The `WxxProjectTests.java` files exercise the relevant algorithm families with their owned course regression cases.
 
@@ -221,7 +235,7 @@ Numeric ID analysis also exposes `frequentCountArray(ids,U)` and `repeatsCountAr
 
 The tree implementation additionally validates repeated node identities and depth using an identity set. Its actual auxiliary cost is O(n+h), rather than the O(h) trusted-tree recursion alone stated in the original contract. This rejects shared-child DAGs and protects the bounded recursion. Flood fill uses an explicit queue; full-size palindrome and Josephus operations use loops.
 
-Convenience methods that construct a frozen prefix or sorted index include construction/validation cost. Reuse `PulseLogWeek5`, `W05CatalogueReference.GridIndex`, `Week8ProjectReference` or `W08WordIndex` directly for repeated O(1) range queries or O(log n) bound queries after their O(n) build. String comparisons also include character work. The source contract and actual checked implementation determine the supported bounds.
+Construction and per-query costs are stated beside each feature above. Only the support classes present in this folder are needed to run this project.
 
 ## Similar applications
 
@@ -232,3 +246,7 @@ folder-size summaries; duplicate-file reporting; recently used file caches. Thes
 This is a complete implementation of the six specified course increments and a console demonstration. It is not a deployed production service. It has no database, UI, external API integration or real personal data. Inputs beyond the documented synthetic bounds are rejected; integer overflow checks are retained where specified. Safety, financial, medical and placement scenarios remain synthetic algorithm exercises, with no real eligibility or operational decisions.
 
 The implementations reuse this course's owned, reviewed Java primitives. Their original class names retain traceability to the source catalogue; they are now included under the explicit authorization to publish completed project solutions. Private assessment sheets, student records and weekly lab answer keys are excluded.
+
+## Audit verification
+
+This project’s documented PowerShell and shell commands, six examples and source-matched explanations are checked in the [course audit report](../AUDIT_REPORT.md). The shell command is also exercised in Linux CI; local shell checks on Windows use Git for Windows `sh`.

@@ -1,0 +1,215 @@
+{
+  "website": "https://chaitanyakumar.in/dsa1?tab=projects",
+  "projects": [
+    {
+      "number": 1,
+      "title": "CampusBite: Canteen Order Analytics",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/01-campusbite",
+      "folder": "01-campusbite",
+      "readme_title_verified": true
+    },
+    {
+      "number": 2,
+      "title": "MetroPulse: Smart-Card Ridership",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/02-metro",
+      "folder": "02-metro",
+      "readme_title_verified": true
+    },
+    {
+      "number": 3,
+      "title": "ScoreLens: Ball-by-Ball Cricket Analyzer",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/03-cricket",
+      "folder": "03-cricket",
+      "readme_title_verified": true
+    },
+    {
+      "number": 4,
+      "title": "DashRoute: Food-Delivery Rider Batching",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/04-delivery",
+      "folder": "04-delivery",
+      "readme_title_verified": true
+    },
+    {
+      "number": 5,
+      "title": "ShelfSense: Library Circulation",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/05-library",
+      "folder": "05-library",
+      "readme_title_verified": true
+    },
+    {
+      "number": 6,
+      "title": "MessVoice: Hostel Feedback Analyzer",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/06-mess",
+      "folder": "06-mess",
+      "readme_title_verified": true
+    },
+    {
+      "number": 7,
+      "title": "StepUp: Fitness Tracker Coach",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/07-fitness",
+      "folder": "07-fitness",
+      "readme_title_verified": true
+    },
+    {
+      "number": 8,
+      "title": "ParkSmart: Mall Parking Occupancy",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/08-parking",
+      "folder": "08-parking",
+      "readme_title_verified": true
+    },
+    {
+      "number": 9,
+      "title": "AirWatch: City AQI Monitor",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/09-aqi",
+      "folder": "09-aqi",
+      "readme_title_verified": true
+    },
+    {
+      "number": 10,
+      "title": "FlashCart: Flash-Sale Inventory",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/10-flashsale",
+      "folder": "10-flashsale",
+      "readme_title_verified": true
+    },
+    {
+      "number": 11,
+      "title": "ExamDesk: Results and Evaluation",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/11-exams",
+      "folder": "11-exams",
+      "readme_title_verified": true
+    },
+    {
+      "number": 12,
+      "title": "TuneLoop: Music Playlist Engine",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/12-playlist",
+      "folder": "12-playlist",
+      "readme_title_verified": true
+    },
+    {
+      "number": 13,
+      "title": "FairFare: Ride-Share Surge Analyzer",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/13-surge",
+      "folder": "13-surge",
+      "readme_title_verified": true
+    },
+    {
+      "number": 14,
+      "title": "BusBuddy: Route and Timetable Planner",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/14-bus",
+      "folder": "14-bus",
+      "readme_title_verified": true
+    },
+    {
+      "number": 15,
+      "title": "CareQueue: Hospital OPD Tokens",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/15-opd",
+      "folder": "15-opd",
+      "readme_title_verified": true
+    },
+    {
+      "number": 16,
+      "title": "TickerTrail: Stock Watchlist Analytics",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/16-stocks",
+      "folder": "16-stocks",
+      "readme_title_verified": true
+    },
+    {
+      "number": 17,
+      "title": "TrendTag: Social Hashtag Trends",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/17-hashtags",
+      "folder": "17-hashtags",
+      "readme_title_verified": true
+    },
+    {
+      "number": 18,
+      "title": "TypeRight: Spell Checker and Autocomplete",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/18-spell",
+      "folder": "18-spell",
+      "readme_title_verified": true
+    },
+    {
+      "number": 19,
+      "title": "SeatSure: Event Ticket Booking",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/19-tickets",
+      "folder": "19-tickets",
+      "readme_title_verified": true
+    },
+    {
+      "number": 20,
+      "title": "WattWise: Smart Electricity Billing",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/20-meter",
+      "folder": "20-meter",
+      "readme_title_verified": true
+    },
+    {
+      "number": 21,
+      "title": "CodeArena: Mini Online Judge",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/21-judge",
+      "folder": "21-judge",
+      "readme_title_verified": true
+    },
+    {
+      "number": 22,
+      "title": "DriveDiet: Cloud Storage Cleaner",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/22-cloud",
+      "folder": "22-cloud",
+      "readme_title_verified": true
+    },
+    {
+      "number": 23,
+      "title": "KisanRate: Mandi Crop-Price Tracker",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/23-mandi",
+      "folder": "23-mandi",
+      "readme_title_verified": true
+    },
+    {
+      "number": 24,
+      "title": "LifeLink: Blood Bank Inventory",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/24-bloodbank",
+      "folder": "24-bloodbank",
+      "readme_title_verified": true
+    },
+    {
+      "number": 25,
+      "title": "SafeChat: Message Moderation",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/25-moderation",
+      "folder": "25-moderation",
+      "readme_title_verified": true
+    },
+    {
+      "number": 26,
+      "title": "PackRight: Warehouse Order Packing",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/26-warehouse",
+      "folder": "26-warehouse",
+      "readme_title_verified": true
+    },
+    {
+      "number": 27,
+      "title": "PlaceMe: Campus Placement Scheduler",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/27-placement",
+      "folder": "27-placement",
+      "readme_title_verified": true
+    },
+    {
+      "number": 28,
+      "title": "NoteNest: Text Editor Core",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/28-editor",
+      "folder": "28-editor",
+      "readme_title_verified": true
+    },
+    {
+      "number": 29,
+      "title": "SafePay: UPI Fraud Monitor",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/29-fraud",
+      "folder": "29-fraud",
+      "readme_title_verified": true
+    },
+    {
+      "number": 30,
+      "title": "RainCatch: Rooftop Water Harvesting",
+      "url": "https://github.com/nckumaruoh/dsa1-course-projects/tree/codex/course-projects/30-harvest",
+      "folder": "30-harvest",
+      "readme_title_verified": true
+    }
+  ]
+}

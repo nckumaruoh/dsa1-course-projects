@@ -1,1 +1,5 @@
+Audit: 28 October 2026
+Documented PowerShell command, isolated build, JDK 21 targeting Java 17
 PASS: 17654 checks; six increments, fixed seed 20261028, independent oracles.
+Manual demo and six independent examples: PASS
+Documented sh command and manual demo: PASS

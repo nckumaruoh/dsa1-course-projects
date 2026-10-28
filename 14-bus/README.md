@@ -10,7 +10,7 @@ Windows PowerShell: `./run.ps1`
 
 Linux/macOS: `sh run.sh`
 
-The scripts compile all `src/*.java` and `test/*.java`, run project checks and the applicable algorithm-family regression suites, then execute `ProjectApp`. A failed compile or test stops the script. To run only the demo after compilation: `java -cp build ProjectApp`.
+The scripts explicitly use UTF-8 for Java output. The scripts compile all `src/*.java` and `test/*.java`, run project checks and the applicable algorithm-family regression suites, then execute `ProjectApp`. A failed compile or test stops the script. To run only the demo after compilation: `java "-Dfile.encoding=UTF-8" "-Dstdout.encoding=UTF-8" -cp build ProjectApp`.
 
 ## Project data and integration
 
@@ -56,9 +56,11 @@ CoreBasics.frequent(new int[]{5,2,5,9,2,5,1})
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Count using array for fixed small universe or a hash map for sparse IDs. On ties choose the smaller ID; frequency is not the numerical ID. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
+**Example reasoning:** Counting each distinct ID gives {1: 1, 2: 2, 5: 3, 9: 1}; a frequency tie chooses the smaller ID.
 
-**Invariant and cost:** Count using array for fixed small universe or a hash map for sparse IDs. On ties choose the smaller ID; frequency is not the numerical ID. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
+**Algorithm:** Count all occurrences, then retain the highest-frequency ID, choosing the smaller numeric ID on ties. The hash implementation supports sparse IDs; frequentCountArray supplies the explicit bounded-universe comparison.
+
+**Invariant and cost:** Processed counts are exact. The winning count/ID pair is updated whenever its ordering improves. Expected O(n) hashing time and O(d) entries; the count-array alternative takes O(n+U) time and O(U) space, including initialization.
 
 **Additional cases:** [3,1,3,1] →mostFrequent1,count2,distinct2; [0] →ID0,count1,distinct1.
 
@@ -86,9 +88,11 @@ W04CatalogueReference.paths(new String[]{"....",".#..","...#","#..."})
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Base start=1 only when free; each open cell sums top and left. Memo state is (row,col).
+**Example reasoning:** Enumerating right/down paths while rejecting blocked cells leaves 3 valid paths to the bottom-right cell.
 
-**Invariant and cost:** O(RC) time and O(RC) memo or O(C) iterative row storage. Explain your counted operation, state, base/undo rule and boundary convention.
+**Algorithm:** Scan grid rows with a one-dimensional DP array. A blocked cell becomes zero; an open cell receives paths from above plus the current row’s left neighbour. The initial one at column zero represents the empty start path.
+
+**Invariant and cost:** After a cell is processed, its DP slot counts exactly the right/down paths to that cell. O(RC) time and O(C) extra space. A blocked start or destination yields zero; checked addition protects the bounded long result.
 
 **Additional cases:** ["...",".#.","..."] → 2; ["#"] → 0.
 
@@ -116,9 +120,11 @@ W05CatalogueReference.apply(6,new int[][]{new int[]{0,2,12},new int[]{1,4,8},new
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Allocate n+1 changes; add at l and subtract at r+1, then reconstruct n positions.
+**Example reasoning:** For each position, add every covering inclusive update; the resulting position values are [12, 20, 20, 23, 23, 15].
 
-**Invariant and cost:** O(n+u) time and O(n) storage including initialisation. Explain your counted operation, prefix/ending-state invariant and exact boundary conversion; recursion/base/undo is N/A. Separate preprocessing, per-query and output costs.
+**Algorithm:** For each inclusive update [l,r,delta], add delta at difference[l] and subtract it at difference[r+1]. A single prefix pass recovers the final value at every position.
+
+**Invariant and cost:** The running difference prefix equals the sum of all updates covering the current position. O(n+u) time and O(n) additional/output storage for u updates. The extra difference slot makes an update ending at n-1 safe.
 
 **Additional cases:** n=3,updates=[[0,1,2],[1,2,-1]] → [2,1,-1]; n=0,updates=[] → [].
 
@@ -146,9 +152,11 @@ W06CatalogueReference.maxSlots(new int[][]{new int[]{0,40},new int[]{30,70},new 
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Sort a copy by finish time, then accept when startâ‰¥lastFinish. Provide an exchange argument; this catalogue extension is guided.
+**Example reasoning:** An exhaustive compatible subset is [[0, 40], [45, 90], [95, 130]]; touching end/start times are compatible. No larger subset is compatible.
 
-**Invariant and cost:** O(n log n) time/O(n) copy; O(1) scan state. Explain pointer/greedy progress,invariant,copy/output storage and exact boundary convention;recursion/undo prompts are N/A.
+**Algorithm:** Copy and sort valid nonempty intervals by finishing time. Accept an interval whenever its start is at least the last accepted end. Choosing an earliest-finishing compatible interval leaves at least as much room for later choices.
+
+**Invariant and cost:** An exchange argument replaces the first interval of any optimum with this greedy choice without reducing the remaining choices. O(n log n) time and O(n) copied/sort storage. Touching end/start times are compatible here; this is the scheduling contract, not the closed-interval union contract.
 
 **Additional cases:** [[1,3],[3,5]] → 2; [] → 0.
 
@@ -176,9 +184,11 @@ Week9ProjectReference.max_min_gap(new int[]{0,4,9,15,22,30},3)
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Sort a copy, greedily place at earliest coordinate respecting gap; search last feasible gap. Adapt the matching skill/problem starter or ProjectW09; create complete main, run catalogue and boundary cases. State monotonicity, safe bounds, shrinking measure and adjacent infeasible answer. Full tested faculty implementations:W09 Project Reference/private package. Choose your actual family;capacity grouping,ceil-hour rate,day threshold and spacing are different predicates. Common SLA model is support,not a compulsory additional project.
+**Example reasoning:** Enumerating all placements gives a minimum-gap optimum of 15, witnessed by positions (0, 15, 30).
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Sort a copy of distinct positions. For a candidate minimum gap, greedily place the first depot at the first position and each later depot at the earliest position far enough away. Binary-search the largest feasible gap.
+
+**Invariant and cost:** Earlier placements leave at least as much room for later ones. Feasibility is nonincreasing with gap. O(n log n+n log(D+1)) time and O(n) copied storage for span D. Reject duplicate positions and invalid depot counts.
 
 **Additional cases:** [0,4,9,15,22,30],3 →15; [0,30],2 →30; invalid depot count → IllegalArgumentException.
 
@@ -206,13 +216,17 @@ Week10ProjectReference.mergeIntervals(new int[][]{new int[]{6,10},new int[]{9,12
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** See the checked Java implementation and regression suite.
+**Example reasoning:** Repeatedly uniting intersecting closed intervals, including touching endpoints, produces [[6, 13], [14, 21]]; gaps remain separate.
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Copy and sort closed intervals by start. Keep a current covered interval; extend its end when the next start is at most that end, otherwise emit it and start a separate interval.
+
+**Invariant and cost:** The output prefix is exactly the union of processed intervals in sorted disjoint form. O(n log n) time and O(n) copy/sort/result storage. Touching endpoints merge. Different rooms/resources must be grouped first, using mergeByRoom.
 
 **Additional cases:** [[1,2],[2,3]] →[[1,3]]; [[1,4],[2,3]] →[[1,4]]; [] →[]; [[3,1]] →IllegalArgumentException.
 
 ## Reproduce and inspect
+
+Cost notation: n is the input count, d the number of distinct IDs, U a declared ID universe, B capacity, T a target, and q the query count. R and C denote grid rows/columns; in cache costs C instead denotes cache capacity. Output storage is identified separately where relevant.
 
 Read [test-results.txt](test-results.txt) for the completed run and [example-output.txt](example-output.txt) for the integrated demonstration. `ProjectTest.java` checks this project's six fixtures and available listed additional cases. `CoreBasicsTest.java` supplies independent ID/counting, bounded-tree, flood-fill and recurrence oracles. The `WxxProjectTests.java` files exercise the relevant algorithm families with their owned course regression cases.
 
@@ -220,7 +234,7 @@ Numeric ID analysis also exposes `frequentCountArray(ids,U)` and `repeatsCountAr
 
 The tree implementation additionally validates repeated node identities and depth using an identity set. Its actual auxiliary cost is O(n+h), rather than the O(h) trusted-tree recursion alone stated in the original contract. This rejects shared-child DAGs and protects the bounded recursion. Flood fill uses an explicit queue; full-size palindrome and Josephus operations use loops.
 
-Convenience methods that construct a frozen prefix or sorted index include construction/validation cost. Reuse `PulseLogWeek5`, `W05CatalogueReference.GridIndex`, `Week8ProjectReference` or `W08WordIndex` directly for repeated O(1) range queries or O(log n) bound queries after their O(n) build. String comparisons also include character work. The source contract and actual checked implementation determine the supported bounds.
+Construction and per-query costs are stated beside each feature above. Only the support classes present in this folder are needed to run this project.
 
 ## Similar applications
 
@@ -231,3 +245,7 @@ timetable planning; depot placement; route-window consolidation. These are appli
 This is a complete implementation of the six specified course increments and a console demonstration. It is not a deployed production service. It has no database, UI, external API integration or real personal data. Inputs beyond the documented synthetic bounds are rejected; integer overflow checks are retained where specified. Safety, financial, medical and placement scenarios remain synthetic algorithm exercises, with no real eligibility or operational decisions.
 
 The implementations reuse this course's owned, reviewed Java primitives. Their original class names retain traceability to the source catalogue; they are now included under the explicit authorization to publish completed project solutions. Private assessment sheets, student records and weekly lab answer keys are excluded.
+
+## Audit verification
+
+This project’s documented PowerShell and shell commands, six examples and source-matched explanations are checked in the [course audit report](../AUDIT_REPORT.md). The shell command is also exercised in Linux CI; local shell checks on Windows use Git for Windows `sh`.

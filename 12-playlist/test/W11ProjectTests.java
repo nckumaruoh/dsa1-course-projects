@@ -194,6 +194,17 @@ public class W11ProjectTests {
       ck(hits >= previous);
       previous = hits;
     }
+    // Exercise the normal public API at the maximum declared request count.
+    // A cycle longer than capacity has no hits; the last C requests are resident.
+    int[] publicRequests = new int[200000];
+    for (int i = 0; i < publicRequests.length; i++) publicRequests[i] = i % 10001;
+    int[] publicOrder = new int[3000];
+    for (int i = 0; i < publicOrder.length; i++) publicOrder[i] = (199999 - i) % 10001;
+    ck(
+        Week11ProjectReference.simulate(publicRequests, 3000)
+            .equals(
+                "hits=0 of 200000, final order (most recent first) "
+                    + Arrays.toString(publicOrder)));
     System.out.println(
         "PASS: "
             + checks

@@ -156,7 +156,8 @@ public class Week11ProjectReference {
   }
 
   static String simulate(int[] requests, int capacity) {
-    Replay r = replay(requests, capacity, true);
+    // Keep expensive per-request structural scans opt-in for explicit debug replay.
+    Replay r = replay(requests, capacity, false);
     return "hits="
         + r.hits
         + " of "

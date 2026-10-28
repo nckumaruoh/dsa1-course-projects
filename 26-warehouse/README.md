@@ -10,7 +10,7 @@ Windows PowerShell: `./run.ps1`
 
 Linux/macOS: `sh run.sh`
 
-The scripts compile all `src/*.java` and `test/*.java`, run project checks and the applicable algorithm-family regression suites, then execute `ProjectApp`. A failed compile or test stops the script. To run only the demo after compilation: `java -cp build ProjectApp`.
+The scripts explicitly use UTF-8 for Java output. The scripts compile all `src/*.java` and `test/*.java`, run project checks and the applicable algorithm-family regression suites, then execute `ProjectApp`. A failed compile or test stops the script. To run only the demo after compilation: `java "-Dfile.encoding=UTF-8" "-Dstdout.encoding=UTF-8" -cp build ProjectApp`.
 
 ## Project data and integration
 
@@ -56,9 +56,11 @@ CoreBasics.pairs(new int[]{3,7,5,5,2,8,6},10)
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** As each weight x arrives, add the number of earlier target−x values, then update frequency[x]. Query before insert to avoid pairing an item with itself. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
+**Example reasoning:** The matching distinct index pairs are [(0, 1), (2, 3), (4, 5)]; repeated equal weights still represent different positions.
 
-**Invariant and cost:** As each weight x arrives, add the number of earlier target−x values, then update frequency[x]. Query before insert to avoid pairing an item with itself. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
+**Algorithm:** For each weight x, add the number of earlier weights equal to target-x, then record x. Looking only at earlier positions counts each unordered pair once and never pairs an item with itself.
+
+**Invariant and cost:** The frequency map describes exactly the processed prefix. Expected O(n) time and O(d) map entries. The pair count is long: 100000 identical zero weights at target zero produce 4,999,950,000 pairs.
 
 **Additional cases:** [5,5,5],target10 →3; [3,7],target10 →1; [],target10 →0.
 
@@ -86,9 +88,11 @@ W04CatalogueReference.bestTotal(new int[]{6,4,9,3,7},15)
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** State (index,remaining); memoise include/skip and reuse cache across target queries.
+**Example reasoning:** One optimal selection uses indices (0, 2), values [6, 9], totalling 15 within capacity 15. Each index is used once.
 
-**Invariant and cost:** O(nB) dense memo time/space plus O(n) frames. Explain your counted operation, state, base/undo rule and boundary convention.
+**Algorithm:** CapacityPlanner.exact(target) memoizes reachable(index,remaining) for one copied input. Skip an index, or take it once when affordable. bestTotal scans target downward from the capacity and reuses that memo until it finds a reachable total. A cached false is a completed result.
+
+**Invariant and cost:** Every recursive branch advances the index, preventing reuse. Across all target queries there are at most n(B+1) memo states. Including the target scan and zero-size cases, time is O((n+1)(B+1)); auxiliary space is O(n(B+1)+n) for dense memo and recursion. The checked n<=30 bound limits stack depth.
 
 **Additional cases:** [2,3,5],capacity=4 → 3; [],capacity=0 → 0.
 
@@ -116,9 +120,11 @@ W05CatalogueReference.rangeSums(new long[]{140L,220L,310L,280L,190L,120L},new in
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Build one frozen prefix with extra zero; validate bounds; compare each answer to a direct loop.
+**Example reasoning:** Direct inclusive slices [[220, 310, 280], [140, 220, 310, 280, 190, 120]] sum to [810, 1260]; both query endpoints count.
 
-**Invariant and cost:** O(n+q) time; O(n) prefix plus O(q) output. Explain your counted operation, prefix/ending-state invariant and exact boundary conversion; recursion/base/undo is N/A. Separate preprocessing, per-query and output costs.
+**Algorithm:** Build a frozen prefix array with an extra leading zero. For an inclusive query [l,r], subtract prefix[l] from prefix[r+1]. The index must be rebuilt after source updates.
+
+**Invariant and cost:** prefix[i] is the sum of the first i values. The convenience batch method takes O(n+q) time and O(n+q) space including its output; construction is O(n), each retained-index query O(1). Signed values and long totals are supported.
 
 **Additional cases:** values=[2,-1,3],queries=[[0,0],[1,2]] → [2,2]; no queries → [].
 
@@ -146,9 +152,11 @@ Week7ProjectReference.minLength(new int[]{7,2,5,10,8,3,6},30)
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Grow right; while sum reaches target, update length and shrink left. Negative values break this monotonic shrinking rule. Create a complete Java class with main and run all three cases. See W07 Java and the matching skill method for a starting pattern. Complete tested faculty source for this family:W07 Project Reference/private package. Implement the full ONE chosen increment;common rolling model is not a compulsory extra project.
+**Example reasoning:** Exhaustively checking all intervals gives shortest length 5, witnessed by indices 0..4; zero means no qualifying interval.
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Grow the right endpoint until a nonnegative-value window reaches target. While it still reaches target, record its length and remove the leftmost value. Continue growing after shrinking makes it too small.
+
+**Invariant and cost:** Every discarded left endpoint has been checked at its shortest current right endpoint. Each index enters/leaves at most once: O(n) time, O(1) workspace. Zero counts are valid; negative counts break this argument and are rejected.
 
 **Additional cases:** [2,3,1],target=4 → 2; [1,1],target=5 → 0.
 
@@ -176,9 +184,11 @@ Week9ProjectReference.min_capacity(new int[]{7,2,5,10,8,3,6},3)
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** Use greedy groups≤rounds and first feasible capacity in [max,sum], long arithmetic. Adapt the matching skill/problem starter or ProjectW09; create complete main, run catalogue and boundary cases. State monotonicity, safe bounds, shrinking measure and adjacent infeasible answer. Full tested faculty implementations:W09 Project Reference/private package. Choose your actual family;capacity grouping,ceil-hour rate,day threshold and spacing are different predicates. Common SLA model is support,not a compulsory additional project.
+**Example reasoning:** Exhaustive contiguous partitions using at most 3 groups yield minimum capacity 17; one partition is [[7], [2, 5, 10], [8, 3, 6]], with loads [7, 17, 17].
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Search the smallest capacity between the largest batch and the total load. A greedy predicate fills each contiguous group until the next batch would exceed capacity, then starts another group. Keep capacities requiring at most rounds groups.
+
+**Invariant and cost:** For a fixed capacity, greedily taking the longest prefix minimizes the number of groups; larger capacity cannot hurt feasibility. O(n log(S-M+1)+n) time and O(1) extra space for total S and largest batch M. Preserve original order; this is not arbitrary bin packing.
 
 **Additional cases:** [7,2,5,10,8],2 →18; rounds1 →32; rounds5 →10. [1000000000,1000000000,1000000000],1 →3000000000.
 
@@ -206,13 +216,17 @@ Week10ProjectReference.mergeIntervals(new int[][]{new int[]{8,10},new int[]{9,11
 
 The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
-**Algorithm:** See the checked Java implementation and regression suite.
+**Example reasoning:** Repeatedly uniting intersecting closed intervals, including touching endpoints, produces [[8, 12], [13, 14], [15, 17]]; gaps remain separate.
 
-**Invariant and cost:** See the checked Java implementation and regression suite.
+**Algorithm:** Copy and sort closed intervals by start. Keep a current covered interval; extend its end when the next start is at most that end, otherwise emit it and start a separate interval.
+
+**Invariant and cost:** The output prefix is exactly the union of processed intervals in sorted disjoint form. O(n log n) time and O(n) copy/sort/result storage. Touching endpoints merge. Different rooms/resources must be grouped first, using mergeByRoom.
 
 **Additional cases:** [[1,2],[2,3]] →[[1,3]]; [[1,4],[2,3]] →[[1,4]]; [] →[]; [[3,1]] →IllegalArgumentException.
 
 ## Reproduce and inspect
+
+Cost notation: n is the input count, d the number of distinct IDs, U a declared ID universe, B capacity, T a target, and q the query count. R and C denote grid rows/columns; in cache costs C instead denotes cache capacity. Output storage is identified separately where relevant.
 
 Read [test-results.txt](test-results.txt) for the completed run and [example-output.txt](example-output.txt) for the integrated demonstration. `ProjectTest.java` checks this project's six fixtures and available listed additional cases. `CoreBasicsTest.java` supplies independent ID/counting, bounded-tree, flood-fill and recurrence oracles. The `WxxProjectTests.java` files exercise the relevant algorithm families with their owned course regression cases.
 
@@ -220,7 +234,7 @@ Numeric ID analysis also exposes `frequentCountArray(ids,U)` and `repeatsCountAr
 
 The tree implementation additionally validates repeated node identities and depth using an identity set. Its actual auxiliary cost is O(n+h), rather than the O(h) trusted-tree recursion alone stated in the original contract. This rejects shared-child DAGs and protects the bounded recursion. Flood fill uses an explicit queue; full-size palindrome and Josephus operations use loops.
 
-Convenience methods that construct a frozen prefix or sorted index include construction/validation cost. Reuse `PulseLogWeek5`, `W05CatalogueReference.GridIndex`, `Week8ProjectReference` or `W08WordIndex` directly for repeated O(1) range queries or O(log n) bound queries after their O(n) build. String comparisons also include character work. The source contract and actual checked implementation determine the supported bounds.
+Construction and per-query costs are stated beside each feature above. Only the support classes present in this folder are needed to run this project.
 
 ## Similar applications
 
@@ -231,3 +245,7 @@ parcel pairing; packing-capacity planning; dispatch-window consolidation. These 
 This is a complete implementation of the six specified course increments and a console demonstration. It is not a deployed production service. It has no database, UI, external API integration or real personal data. Inputs beyond the documented synthetic bounds are rejected; integer overflow checks are retained where specified. Safety, financial, medical and placement scenarios remain synthetic algorithm exercises, with no real eligibility or operational decisions.
 
 The implementations reuse this course's owned, reviewed Java primitives. Their original class names retain traceability to the source catalogue; they are now included under the explicit authorization to publish completed project solutions. Private assessment sheets, student records and weekly lab answer keys are excluded.
+
+## Audit verification
+
+This project’s documented PowerShell and shell commands, six examples and source-matched explanations are checked in the [course audit report](../AUDIT_REPORT.md). The shell command is also exercised in Linux CI; local shell checks on Windows use Git for Windows `sh`.

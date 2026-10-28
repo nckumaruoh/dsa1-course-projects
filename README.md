@@ -6,7 +6,9 @@ Completed implementations of the six required catalogue increments for each proj
 
 Choose a project below, open its folder and follow its README. On Windows run `./run.ps1`; on Linux/macOS run `sh run.sh`. Each script compiles, checks the project and runs its integrated demonstration. The README explains the callable methods so that you can supply different data.
 
-To verify the entire repository with a JDK on PATH: `python verify_all.py`. The CI workflow runs the same command on Java 17. Each folder contains actual `test-results.txt` and `example-output.txt` from its completed local run.
+To verify the entire repository with Python 3.10+ and a JDK on PATH: `python verify_all.py`. This runs each documented script from a fresh temporary copy, compares its actual demo output and independently checks all six examples. Use `python verify_all.py --shell` to explicitly exercise `sh`, or `python verify_all.py --project canteen` for one project. The CI workflow runs the audit on Java 17 on Linux and Windows. Each project itself still needs only a JDK.
+
+See [AUDIT_REPORT.md](AUDIT_REPORT.md) for the one-by-one results, explanation review, execution fixes and verified website destinations. Each folder contains actual `test-results.txt` and `example-output.txt` from its completed local run.
 
 ## Project catalogue
 

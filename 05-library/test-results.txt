@@ -1,15 +1,10 @@
-ProjectTest
+Audit: 28 October 2026
+Documented PowerShell command, isolated build, JDK 21 targeting Java 17
 PASS: 4021 basic primitive checks; fixed seed, independent oracles.
 PASS: 13 project-specific sample/boundary checks; all six increments.
-
-W05ProjectTests
 PASS: 124578 project assertions; 25 catalogue samples +50 listed additional cases; frozen queries,7 domain families,witnesses,bounds and overflow.
-
-W07ProjectTests
 PASS: 19931 project assertions;21 source samples plus42 listed additional cases,rolling/stable model,independent oracles,limits and multiplicities.
-
-W08ProjectTests
 PASS: 391662 project assertions;18 source samples +54 listed boundary cases;frozen numeric/word indices,prefix successors,counters,limits and endpoint extremes.
-
-W12ProjectTests
 PASS: 80125 project assertions;18 catalogue samples,81 repeated listed cases,7 families,variable rules,queue/time and integration oracles.
+Manual demo and six independent examples: PASS
+Documented sh command and manual demo: PASS

@@ -15,11 +15,11 @@ Manual commands from this folder:
 ```text
 mkdir build
 javac --release 17 -encoding UTF-8 -d build src/CampusBite.java test/CampusBiteTest.java
-java -cp build CampusBiteTest
-java -cp build CampusBite --trace
+java "-Dfile.encoding=UTF-8" "-Dstdout.encoding=UTF-8" -cp build CampusBiteTest
+java "-Dfile.encoding=UTF-8" "-Dstdout.encoding=UTF-8" -cp build CampusBite --trace
 ```
 
-The scripts compile, run the regression suite and execute the integrated demonstration. Compilation or test failure stops execution. The optional trace prints each token's arrival, selected counter, start, finish and wait.
+The scripts explicitly use UTF-8 for Java output. The scripts compile, run the regression suite and execute the integrated demonstration. Compilation or test failure stops execution. The optional trace prints each token's arrival, selected counter, start, finish and wait.
 
 ## Six increments and the realigned course
 
@@ -64,7 +64,7 @@ Wait excludes service. Counters finishing at minute t can immediately serve an a
 | Hash-based retries | Seen contains exactly the IDs already encountered | Expected O(n) map operations, plus string character work | O(d) entries |
 | Pairwise comparison | Search all earlier positions before classifying an encounter | O(n²) comparisons | O(1), excluding report |
 | Count array | `counts[id]` counts encounters so far | O(n+U), including initialization | O(U) |
-| Memoized combo | `best(i,b)=max(skip,price[i]+best(i+1,b-price[i]))` when affordable | O(nB) | O(nB) memo + O(n) stack |
+| Memoized combo | `best(i,b)=max(skip,price[i]+best(i+1,b-price[i]))` when affordable | O(n(B+1)) | O(n(B+1)) memo + O(n) stack |
 | Prefix revenue | `prefix[i]` sums the first i slots | O(n) build, O(1) query; batch O(n+q) | O(n), plus returned q values |
 | Fixed window | Running sum equals the current exactly-k-slot total | O(n) | O(1), excluding two-value result |
 | Lower-bound index | Search interval retains the first value at least the target | O(n) validation/copy once, O(log n) per query | O(n) frozen copy |
@@ -93,3 +93,7 @@ Independent small-input oracles enumerate subsets, directly sum ranges/windows a
 The same components support cafeteria token systems, retail checkout staffing, appointment waiting rooms, event admissions and repeated telemetry ingestion. Related course projects include **CareQueue** (OPD tokens), **ParkSmart** (parking), **ShelfSense** (library circulation) and **LifeLink** (blood bank inventory).
 
 Possible extensions are a CSV importer, item-level revenue aggregation, a timestamp-to-slot adapter and variable service times. Each would need new contracts and tests; they are not claimed as implemented here.
+
+## Audit verification
+
+This project’s documented PowerShell and shell commands, six examples and source-matched explanations are checked in the [course audit report](../AUDIT_REPORT.md). The shell command is also exercised in Linux CI; local shell checks on Windows use Git for Windows `sh`.

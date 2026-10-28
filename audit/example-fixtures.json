@@ -1,0 +1,3403 @@
+{
+  "canteen": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "501",
+          "502",
+          "503",
+          "502",
+          "504",
+          "501",
+          "505",
+          "502"
+        ]
+      ],
+      "project": "canteen",
+      "source_week": 1,
+      "title": "Catch double charges"
+    },
+    {
+      "method": "bestTotal",
+      "args": [
+        [
+          60,
+          45,
+          30,
+          80,
+          25
+        ],
+        150
+      ],
+      "project": "canteen",
+      "source_week": 4,
+      "title": "Combo builder"
+    },
+    {
+      "method": "rangeSums",
+      "args": [
+        [
+          450,
+          1200,
+          2300,
+          3100,
+          2800,
+          900,
+          600
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            0,
+            6
+          ]
+        ]
+      ],
+      "project": "canteen",
+      "source_week": 5,
+      "title": "Revenue between two times"
+    },
+    {
+      "method": "bestWindow",
+      "args": [
+        [
+          450,
+          1200,
+          2300,
+          3100,
+          2800,
+          900,
+          600
+        ],
+        3
+      ],
+      "project": "canteen",
+      "source_week": 7,
+      "title": "Find the lunch rush"
+    },
+    {
+      "method": "count",
+      "args": [
+        [
+          30,
+          95,
+          180,
+          241,
+          250,
+          266,
+          299,
+          300,
+          345
+        ],
+        240,
+        300
+      ],
+      "project": "canteen",
+      "source_week": 8,
+      "title": "Orders in a time slot"
+    },
+    {
+      "method": "queueSim",
+      "args": [
+        [
+          1,
+          2,
+          1,
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        3,
+        1
+      ],
+      "project": "canteen",
+      "source_week": 12,
+      "title": "Counter queue simulation"
+    }
+  ],
+  "metro": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          3,
+          7,
+          3,
+          12,
+          7,
+          3,
+          5,
+          7,
+          3
+        ]
+      ],
+      "project": "metro",
+      "source_week": 1,
+      "title": "Busiest station"
+    },
+    {
+      "method": "minCoins",
+      "args": [
+        [
+          10,
+          25,
+          60
+        ],
+        135
+      ],
+      "project": "metro",
+      "source_week": 4,
+      "title": "Cheapest fare products"
+    },
+    {
+      "method": "apply",
+      "args": [
+        6,
+        [
+          [
+            0,
+            3,
+            120
+          ],
+          [
+            2,
+            5,
+            80
+          ],
+          [
+            1,
+            2,
+            60
+          ]
+        ]
+      ],
+      "project": "metro",
+      "source_week": 5,
+      "title": "Load on each track segment"
+    },
+    {
+      "method": "bestWindow",
+      "args": [
+        [
+          40,
+          65,
+          120,
+          180,
+          150,
+          90,
+          60
+        ],
+        3
+      ],
+      "project": "metro",
+      "source_week": 7,
+      "title": "Peak 15-minute window"
+    },
+    {
+      "method": "min_capacity",
+      "args": [
+        [
+          300,
+          450,
+          200,
+          380,
+          520,
+          260
+        ],
+        4
+      ],
+      "project": "metro",
+      "source_week": 9,
+      "title": "Train capacity needed"
+    },
+    {
+      "method": "waitDays",
+      "args": [
+        [
+          820,
+          1100,
+          950,
+          700,
+          1300,
+          1250,
+          900
+        ]
+      ],
+      "project": "metro",
+      "source_week": 12,
+      "title": "Next busier hour"
+    }
+  ],
+  "cricket": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          1,
+          4,
+          1,
+          0,
+          6,
+          1,
+          4,
+          1,
+          2,
+          0
+        ]
+      ],
+      "project": "cricket",
+      "source_week": 1,
+      "title": "Scoring-shot profile"
+    },
+    {
+      "method": "ways",
+      "args": [
+        [
+          1,
+          2,
+          4,
+          6
+        ],
+        8
+      ],
+      "project": "cricket",
+      "source_week": 4,
+      "title": "Ways to make a target"
+    },
+    {
+      "method": "bestSum",
+      "args": [
+        [
+          -2,
+          1,
+          -4,
+          4,
+          -1,
+          7,
+          -5,
+          2
+        ]
+      ],
+      "project": "cricket",
+      "source_week": 5,
+      "title": "Best momentum phase"
+    },
+    {
+      "method": "bestWindow",
+      "args": [
+        [
+          6,
+          9,
+          4,
+          12,
+          7,
+          15,
+          3,
+          10
+        ],
+        3
+      ],
+      "project": "cricket",
+      "source_week": 7,
+      "title": "Hottest 3-over spell"
+    },
+    {
+      "method": "lower",
+      "args": [
+        [
+          6,
+          15,
+          19,
+          31,
+          38,
+          53,
+          56,
+          66
+        ],
+        50
+      ],
+      "project": "cricket",
+      "source_week": 8,
+      "title": "When did they reach 50?"
+    },
+    {
+      "method": "rank",
+      "args": [
+        [
+          "Rohit",
+          "Gill",
+          "Kohli",
+          "Pant"
+        ],
+        [
+          45,
+          52,
+          45,
+          38
+        ],
+        [
+          30,
+          41,
+          28,
+          22
+        ],
+        false
+      ],
+      "project": "cricket",
+      "source_week": 10,
+      "title": "Leaderboard"
+    }
+  ],
+  "delivery": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "41",
+          "42",
+          "43",
+          "42",
+          "44",
+          "45",
+          "41"
+        ]
+      ],
+      "project": "delivery",
+      "source_week": 1,
+      "title": "Duplicate orders"
+    },
+    {
+      "method": "bestTotal",
+      "args": [
+        [
+          3,
+          4,
+          5,
+          7,
+          2
+        ],
+        10
+      ],
+      "project": "delivery",
+      "source_week": 4,
+      "title": "Fill a rider’s bag"
+    },
+    {
+      "method": "pair",
+      "args": [
+        [
+          2,
+          7,
+          4,
+          5,
+          3,
+          8
+        ],
+        9
+      ],
+      "project": "delivery",
+      "source_week": 6,
+      "title": "Pair short trips"
+    },
+    {
+      "method": "minLength",
+      "args": [
+        [
+          8,
+          12,
+          5,
+          20,
+          9,
+          14,
+          3
+        ],
+        50
+      ],
+      "project": "delivery",
+      "source_week": 7,
+      "title": "Fastest 50 orders"
+    },
+    {
+      "method": "min_rate",
+      "args": [
+        [
+          30,
+          11,
+          23,
+          4,
+          20
+        ],
+        6
+      ],
+      "project": "delivery",
+      "source_week": 9,
+      "title": "Minimum delivery rate"
+    },
+    {
+      "method": "mergeIntervals",
+      "args": [
+        [
+          [
+            9,
+            13
+          ],
+          [
+            12,
+            15
+          ],
+          [
+            18,
+            22
+          ],
+          [
+            21,
+            23
+          ],
+          [
+            14,
+            16
+          ]
+        ]
+      ],
+      "project": "delivery",
+      "source_week": 10,
+      "title": "Merge rider shifts"
+    }
+  ],
+  "library": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "1450",
+          "2210",
+          "1450",
+          "3999",
+          "2210",
+          "1450"
+        ]
+      ],
+      "project": "library",
+      "source_week": 1,
+      "title": "Double scans at the gate"
+    },
+    {
+      "method": "total",
+      "args": [],
+      "own_values": [
+        120,
+        45,
+        30,
+        60
+      ],
+      "project": "library",
+      "source_week": 3,
+      "title": "Category tree totals"
+    },
+    {
+      "method": "apply",
+      "args": [
+        8,
+        [
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            2,
+            6,
+            1
+          ],
+          [
+            5,
+            7,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      ],
+      "project": "library",
+      "source_week": 5,
+      "title": "Books out each day"
+    },
+    {
+      "method": "count",
+      "args": [
+        "data structures; data science; big data analytics",
+        "data"
+      ],
+      "project": "library",
+      "source_week": 7,
+      "title": "Keyword search"
+    },
+    {
+      "method": "lower",
+      "args": [
+        [
+          1002,
+          1450,
+          2210,
+          3999,
+          4417,
+          5120,
+          7004
+        ],
+        4417
+      ],
+      "project": "library",
+      "source_week": 8,
+      "title": "Find a book"
+    },
+    {
+      "method": "queueSim",
+      "args": [
+        [
+          2,
+          1,
+          0,
+          2,
+          1,
+          1,
+          0,
+          0
+        ],
+        2,
+        1
+      ],
+      "project": "library",
+      "source_week": 12,
+      "title": "Return-counter queue"
+    }
+  ],
+  "mess": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          12,
+          4,
+          12,
+          7,
+          4,
+          12,
+          9
+        ]
+      ],
+      "project": "mess",
+      "source_week": 1,
+      "title": "Most common complaint word"
+    },
+    {
+      "method": "palindrome",
+      "args": [
+        "Mess-Code: edoc ssem"
+      ],
+      "project": "mess",
+      "source_week": 3,
+      "title": "Palindrome coupon codes"
+    },
+    {
+      "method": "merge",
+      "args": [
+        [
+          1,
+          3,
+          4,
+          8
+        ],
+        [
+          2,
+          3,
+          6,
+          9
+        ]
+      ],
+      "project": "mess",
+      "source_week": 6,
+      "title": "Merge two feedback forms"
+    },
+    {
+      "method": "count",
+      "args": [
+        "rice was cold food cold food again",
+        "cold food"
+      ],
+      "project": "mess",
+      "source_week": 7,
+      "title": "Keyword alerts"
+    },
+    {
+      "method": "count",
+      "args": [
+        [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          5,
+          5
+        ],
+        2,
+        4
+      ],
+      "project": "mess",
+      "source_week": 8,
+      "title": "Ratings in a band"
+    },
+    {
+      "method": "validBrackets",
+      "args": [
+        "[veg](spicy){menu}[x(y])"
+      ],
+      "project": "mess",
+      "source_week": 12,
+      "title": "Clean formatting"
+    }
+  ],
+  "fitness": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          2,
+          1,
+          2,
+          3,
+          2,
+          1,
+          1,
+          2
+        ]
+      ],
+      "project": "fitness",
+      "source_week": 1,
+      "title": "Favourite activity"
+    },
+    {
+      "method": "countSubsets",
+      "args": [
+        [
+          20,
+          30,
+          10,
+          40,
+          30
+        ],
+        60
+      ],
+      "project": "fitness",
+      "source_week": 4,
+      "title": "Exactly 60 minutes"
+    },
+    {
+      "method": "bestSum",
+      "args": [
+        [
+          -800,
+          1450,
+          -2700,
+          3100,
+          800,
+          6020,
+          -4700
+        ]
+      ],
+      "project": "fitness",
+      "source_week": 5,
+      "title": "Best streak above goal"
+    },
+    {
+      "method": "bestWindow",
+      "args": [
+        [
+          8200,
+          10450,
+          6300,
+          12100,
+          9800,
+          15020,
+          4300,
+          7600,
+          11200,
+          9900
+        ],
+        7
+      ],
+      "project": "fitness",
+      "source_week": 7,
+      "title": "Best 7-day week"
+    },
+    {
+      "method": "max_goal",
+      "args": [
+        [
+          8200,
+          10450,
+          6300,
+          12100,
+          9800,
+          15020,
+          4300
+        ],
+        5
+      ],
+      "project": "fitness",
+      "source_week": 9,
+      "title": "A fair daily goal"
+    },
+    {
+      "method": "slidingMax",
+      "args": [
+        [
+          72,
+          80,
+          95,
+          110,
+          104,
+          98,
+          120,
+          90
+        ],
+        3
+      ],
+      "project": "fitness",
+      "source_week": 12,
+      "title": "Peak heart rate"
+    }
+  ],
+  "parking": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "3301",
+          "4410",
+          "3301",
+          "5120",
+          "4410",
+          "6008"
+        ]
+      ],
+      "project": "parking",
+      "source_week": 1,
+      "title": "Re-entry without exit"
+    },
+    {
+      "method": "paths",
+      "args": [
+        [
+          "...",
+          ".#.",
+          "..."
+        ]
+      ],
+      "project": "parking",
+      "source_week": 4,
+      "title": "Routes to a free slot"
+    },
+    {
+      "method": "rectangle",
+      "args": [
+        [
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1
+          ]
+        ],
+        0,
+        1,
+        1,
+        2
+      ],
+      "project": "parking",
+      "source_week": 5,
+      "title": "Free slots in a zone"
+    },
+    {
+      "method": "maxSlots",
+      "args": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            8,
+            10
+          ]
+        ]
+      ],
+      "project": "parking",
+      "source_week": 6,
+      "title": "EV charger bookings"
+    },
+    {
+      "method": "lower",
+      "args": [
+        [
+          60,
+          120,
+          180,
+          240,
+          360
+        ],
+        135
+      ],
+      "project": "parking",
+      "source_week": 8,
+      "title": "Fee slab lookup"
+    },
+    {
+      "method": "queueSim",
+      "args": [
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        2,
+        1
+      ],
+      "project": "parking",
+      "source_week": 12,
+      "title": "Entry gate queue"
+    }
+  ],
+  "aqi": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          2,
+          3,
+          3,
+          4,
+          3,
+          2,
+          4,
+          3
+        ]
+      ],
+      "project": "aqi",
+      "source_week": 1,
+      "title": "Hours per category"
+    },
+    {
+      "method": "region",
+      "args": [
+        [
+          "..#.",
+          ".##.",
+          "...#",
+          "#..."
+        ],
+        0,
+        0
+      ],
+      "project": "aqi",
+      "source_week": 3,
+      "title": "Polluted zone size"
+    },
+    {
+      "method": "rectangle",
+      "args": [
+        [
+          [
+            120,
+            145,
+            180,
+            90
+          ],
+          [
+            210,
+            260,
+            230,
+            110
+          ],
+          [
+            190,
+            150,
+            140,
+            95
+          ]
+        ],
+        0,
+        1,
+        1,
+        2
+      ],
+      "project": "aqi",
+      "source_week": 5,
+      "title": "Pollution in a city block"
+    },
+    {
+      "method": "bestWindow",
+      "args": [
+        [
+          120,
+          145,
+          180,
+          210,
+          260,
+          230,
+          190,
+          150
+        ],
+        3
+      ],
+      "project": "aqi",
+      "source_week": 7,
+      "title": "Worst 3-hour window"
+    },
+    {
+      "method": "count",
+      "args": [
+        [
+          120,
+          145,
+          150,
+          180,
+          190,
+          210,
+          230,
+          260,
+          310
+        ],
+        200,
+        300
+      ],
+      "project": "aqi",
+      "source_week": 8,
+      "title": "Hours in a band"
+    },
+    {
+      "method": "waitDays",
+      "args": [
+        [
+          120,
+          145,
+          130,
+          110,
+          160,
+          150,
+          170
+        ]
+      ],
+      "project": "aqi",
+      "source_week": 12,
+      "title": "Hours until it gets worse"
+    }
+  ],
+  "flashsale": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "7",
+          "3",
+          "7",
+          "9",
+          "7",
+          "3",
+          "11",
+          "7"
+        ]
+      ],
+      "project": "flashsale",
+      "source_week": 1,
+      "title": "Bot detection"
+    },
+    {
+      "method": "minCoins",
+      "args": [
+        [
+          50,
+          100,
+          200
+        ],
+        450
+      ],
+      "project": "flashsale",
+      "source_week": 4,
+      "title": "Fewest coupons"
+    },
+    {
+      "method": "rangeSums",
+      "args": [
+        [
+          120,
+          340,
+          560,
+          410,
+          220,
+          90
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            5
+          ]
+        ]
+      ],
+      "project": "flashsale",
+      "source_week": 5,
+      "title": "Units sold in any minute range"
+    },
+    {
+      "method": "pair",
+      "args": [
+        [
+          499,
+          650,
+          250,
+          750,
+          300,
+          820
+        ],
+        1000
+      ],
+      "project": "flashsale",
+      "source_week": 6,
+      "title": "Bundle offers"
+    },
+    {
+      "method": "min_rate",
+      "args": [
+        [
+          120,
+          45,
+          300,
+          80
+        ],
+        6
+      ],
+      "project": "flashsale",
+      "source_week": 9,
+      "title": "Packing rate"
+    },
+    {
+      "method": "simulate",
+      "args": [
+        [
+          1,
+          2,
+          3,
+          1,
+          4,
+          2,
+          1,
+          5,
+          1
+        ],
+        3
+      ],
+      "project": "flashsale",
+      "source_week": 11,
+      "title": "Product page cache"
+    }
+  ],
+  "exams": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "101",
+          "102",
+          "103",
+          "101",
+          "104",
+          "102"
+        ]
+      ],
+      "project": "exams",
+      "source_week": 1,
+      "title": "Duplicate attendance"
+    },
+    {
+      "method": "minCoins",
+      "args": [
+        [
+          1,
+          2,
+          5
+        ],
+        13
+      ],
+      "project": "exams",
+      "source_week": 4,
+      "title": "Grace marks"
+    },
+    {
+      "method": "rangeSums",
+      "args": [
+        [
+          72,
+          85,
+          64,
+          91,
+          58,
+          77
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "project": "exams",
+      "source_week": 5,
+      "title": "Marks in any roll range"
+    },
+    {
+      "method": "lcs",
+      "args": [
+        "abcbdacb",
+        "abdcabcb"
+      ],
+      "project": "exams",
+      "source_week": 7,
+      "title": "Copying check"
+    },
+    {
+      "method": "min_capacity",
+      "args": [
+        [
+          42,
+          38,
+          51,
+          29,
+          47,
+          33,
+          60,
+          25
+        ],
+        3
+      ],
+      "project": "exams",
+      "source_week": 9,
+      "title": "Evaluator load"
+    },
+    {
+      "method": "rank",
+      "args": [
+        [
+          "Asha",
+          "Bala",
+          "Chitra",
+          "Dev"
+        ],
+        [
+          410,
+          425,
+          410,
+          398
+        ],
+        [
+          88,
+          90,
+          95,
+          99
+        ],
+        true
+      ],
+      "project": "exams",
+      "source_week": 10,
+      "title": "Rank list"
+    }
+  ],
+  "playlist": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          4,
+          2,
+          4,
+          7,
+          9,
+          2,
+          4,
+          7
+        ]
+      ],
+      "project": "playlist",
+      "source_week": 1,
+      "title": "Most played song"
+    },
+    {
+      "method": "winner",
+      "args": [
+        7,
+        3
+      ],
+      "project": "playlist",
+      "source_week": 3,
+      "title": "Party elimination game"
+    },
+    {
+      "method": "rangeSums",
+      "args": [
+        [
+          210,
+          185,
+          240,
+          200,
+          260,
+          195
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            5
+          ]
+        ]
+      ],
+      "project": "playlist",
+      "source_week": 5,
+      "title": "Queue duration"
+    },
+    {
+      "method": "longest",
+      "args": [
+        [
+          3,
+          3,
+          1,
+          2,
+          1,
+          1,
+          2,
+          3,
+          3,
+          4
+        ],
+        2
+      ],
+      "project": "playlist",
+      "source_week": 7,
+      "title": "At most two artists"
+    },
+    {
+      "method": "lower",
+      "args": [
+        [
+          210,
+          395,
+          635,
+          835,
+          1095,
+          1290
+        ],
+        700
+      ],
+      "project": "playlist",
+      "source_week": 8,
+      "title": "Song at a given time"
+    },
+    {
+      "method": "simulate",
+      "args": [
+        [
+          4,
+          2,
+          4,
+          7,
+          9,
+          2,
+          4,
+          7
+        ],
+        3
+      ],
+      "project": "playlist",
+      "source_week": 11,
+      "title": "Offline cache"
+    }
+  ],
+  "surge": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "88",
+          "91",
+          "88",
+          "93",
+          "95",
+          "91",
+          "88"
+        ]
+      ],
+      "project": "surge",
+      "source_week": 1,
+      "title": "Duplicate ride requests"
+    },
+    {
+      "method": "ways",
+      "args": [
+        [
+          2,
+          3,
+          4
+        ],
+        10
+      ],
+      "project": "surge",
+      "source_week": 4,
+      "title": "Shift plans"
+    },
+    {
+      "method": "bestSum",
+      "args": [
+        [
+          -3,
+          4,
+          6,
+          -2,
+          5,
+          -8,
+          3,
+          2
+        ]
+      ],
+      "project": "surge",
+      "source_week": 5,
+      "title": "Worst shortage stretch"
+    },
+    {
+      "method": "minLength",
+      "args": [
+        [
+          8,
+          12,
+          5,
+          20,
+          9,
+          14,
+          3
+        ],
+        50
+      ],
+      "project": "surge",
+      "source_week": 7,
+      "title": "Shortest stretch reaching 50 rides"
+    },
+    {
+      "method": "min_rate",
+      "args": [
+        [
+          120,
+          45,
+          300,
+          80
+        ],
+        8
+      ],
+      "project": "surge",
+      "source_week": 9,
+      "title": "Driver rate needed"
+    },
+    {
+      "method": "slidingMax",
+      "args": [
+        [
+          10,
+          12,
+          15,
+          13,
+          18,
+          11,
+          10
+        ],
+        3
+      ],
+      "project": "surge",
+      "source_week": 12,
+      "title": "Surge cap"
+    }
+  ],
+  "bus": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          5,
+          2,
+          5,
+          9,
+          2,
+          5,
+          1
+        ]
+      ],
+      "project": "bus",
+      "source_week": 1,
+      "title": "Busiest boarding stop"
+    },
+    {
+      "method": "paths",
+      "args": [
+        [
+          "....",
+          ".#..",
+          "...#",
+          "#..."
+        ]
+      ],
+      "project": "bus",
+      "source_week": 4,
+      "title": "Routes through the grid"
+    },
+    {
+      "method": "apply",
+      "args": [
+        6,
+        [
+          [
+            0,
+            2,
+            12
+          ],
+          [
+            1,
+            4,
+            8
+          ],
+          [
+            3,
+            5,
+            15
+          ]
+        ]
+      ],
+      "project": "bus",
+      "source_week": 5,
+      "title": "Passengers on board"
+    },
+    {
+      "method": "maxSlots",
+      "args": [
+        [
+          [
+            0,
+            40
+          ],
+          [
+            30,
+            70
+          ],
+          [
+            45,
+            90
+          ],
+          [
+            95,
+            130
+          ],
+          [
+            70,
+            100
+          ]
+        ]
+      ],
+      "project": "bus",
+      "source_week": 6,
+      "title": "Most trips for one bus"
+    },
+    {
+      "method": "max_min_gap",
+      "args": [
+        [
+          0,
+          4,
+          9,
+          15,
+          22,
+          30
+        ],
+        3
+      ],
+      "project": "bus",
+      "source_week": 9,
+      "title": "Depot spacing"
+    },
+    {
+      "method": "mergeIntervals",
+      "args": [
+        [
+          [
+            6,
+            10
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            14,
+            18
+          ],
+          [
+            17,
+            21
+          ],
+          [
+            12,
+            13
+          ]
+        ]
+      ],
+      "project": "bus",
+      "source_week": 10,
+      "title": "Operating hours"
+    }
+  ],
+  "opd": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "17",
+          "18",
+          "19",
+          "18",
+          "20",
+          "21",
+          "17"
+        ]
+      ],
+      "project": "opd",
+      "source_week": 1,
+      "title": "Duplicate tokens"
+    },
+    {
+      "method": "total",
+      "args": [],
+      "own_values": [
+        0,
+        40,
+        25,
+        35
+      ],
+      "project": "opd",
+      "source_week": 3,
+      "title": "Department totals"
+    },
+    {
+      "method": "rangeSums",
+      "args": [
+        [
+          30,
+          45,
+          20,
+          38,
+          52,
+          26
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      ],
+      "project": "opd",
+      "source_week": 5,
+      "title": "Patients in any hours"
+    },
+    {
+      "method": "bestWindow",
+      "args": [
+        [
+          30,
+          45,
+          20,
+          38,
+          52,
+          26
+        ],
+        2
+      ],
+      "project": "opd",
+      "source_week": 7,
+      "title": "Busiest two hours"
+    },
+    {
+      "method": "min_capacity",
+      "args": [
+        [
+          30,
+          45,
+          20,
+          38,
+          52,
+          26,
+          18,
+          12,
+          9
+        ],
+        5
+      ],
+      "project": "opd",
+      "source_week": 9,
+      "title": "Consultation capacity"
+    },
+    {
+      "method": "queueSim",
+      "args": [
+        [
+          2,
+          1,
+          1,
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        4,
+        2
+      ],
+      "project": "opd",
+      "source_week": 12,
+      "title": "Token queue"
+    }
+  ],
+  "stocks": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "9001",
+          "9002",
+          "9003",
+          "9001",
+          "9004",
+          "9001"
+        ]
+      ],
+      "project": "stocks",
+      "source_week": 1,
+      "title": "Duplicate trade confirmations"
+    },
+    {
+      "method": "bestTotal",
+      "args": [
+        [
+          1850,
+          2420,
+          980,
+          1460,
+          3100
+        ],
+        5000
+      ],
+      "project": "stocks",
+      "source_week": 4,
+      "title": "Spend a budget"
+    },
+    {
+      "method": "profit",
+      "args": [
+        [
+          2841,
+          2856,
+          2830,
+          2812,
+          2847,
+          2869,
+          2858,
+          2875
+        ]
+      ],
+      "project": "stocks",
+      "source_week": 5,
+      "title": "Best single trade"
+    },
+    {
+      "method": "merge",
+      "args": [
+        [
+          1,
+          4,
+          6,
+          9
+        ],
+        [
+          2,
+          3,
+          7,
+          10
+        ]
+      ],
+      "project": "stocks",
+      "source_week": 6,
+      "title": "Merge two exchanges"
+    },
+    {
+      "method": "lower",
+      "args": [
+        [
+          2,
+          3,
+          6,
+          8,
+          13,
+          15,
+          16
+        ],
+        15
+      ],
+      "project": "stocks",
+      "source_week": 8,
+      "title": "Price on a date"
+    },
+    {
+      "method": "span",
+      "args": [
+        [
+          100,
+          80,
+          60,
+          70,
+          60,
+          75,
+          85
+        ]
+      ],
+      "project": "stocks",
+      "source_week": 12,
+      "title": "Stock span"
+    }
+  ],
+  "hashtags": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          3,
+          1,
+          3,
+          5,
+          1,
+          3,
+          7
+        ]
+      ],
+      "project": "hashtags",
+      "source_week": 1,
+      "title": "Most used tag"
+    },
+    {
+      "method": "total",
+      "args": [],
+      "own_values": [
+        120,
+        30,
+        12,
+        45
+      ],
+      "project": "hashtags",
+      "source_week": 3,
+      "title": "Thread engagement"
+    },
+    {
+      "method": "rangeSums",
+      "args": [
+        [
+          540,
+          820,
+          1310,
+          2200,
+          1900,
+          760
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            0,
+            5
+          ]
+        ]
+      ],
+      "project": "hashtags",
+      "source_week": 5,
+      "title": "Posts in any hours"
+    },
+    {
+      "method": "groups",
+      "args": [
+        [
+          "iplfinal",
+          "finalipl",
+          "goat",
+          "toga",
+          "rcb",
+          "bcr",
+          "csk"
+        ]
+      ],
+      "project": "hashtags",
+      "source_week": 7,
+      "title": "Variant grouping"
+    },
+    {
+      "method": "count",
+      "args": [
+        [
+          20,
+          75,
+          100,
+          130,
+          155,
+          199,
+          200,
+          260
+        ],
+        100,
+        200
+      ],
+      "project": "hashtags",
+      "source_week": 8,
+      "title": "Posts in a time window"
+    },
+    {
+      "method": "topKLinear",
+      "args": [
+        [
+          3,
+          1,
+          3,
+          5,
+          1,
+          3,
+          7,
+          5,
+          5,
+          3
+        ],
+        3
+      ],
+      "project": "hashtags",
+      "source_week": 10,
+      "title": "Top trends"
+    }
+  ],
+  "spell": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          4,
+          0,
+          4,
+          19,
+          4,
+          0,
+          18
+        ]
+      ],
+      "project": "spell",
+      "source_week": 1,
+      "title": "Letter frequencies"
+    },
+    {
+      "method": "distance",
+      "args": [
+        "recieve",
+        "receive"
+      ],
+      "project": "spell",
+      "source_week": 4,
+      "title": "Edit distance"
+    },
+    {
+      "method": "merge",
+      "args": [
+        [
+          3,
+          8,
+          15,
+          21
+        ],
+        [
+          5,
+          8,
+          30
+        ]
+      ],
+      "project": "spell",
+      "source_week": 6,
+      "title": "Merge two dictionaries"
+    },
+    {
+      "method": "lcs",
+      "args": [
+        "klconnect",
+        "kluniversity"
+      ],
+      "project": "spell",
+      "source_week": 7,
+      "title": "Similarity score"
+    },
+    {
+      "method": "count",
+      "args": [
+        [
+          "bread",
+          "chai",
+          "chakli",
+          "chana",
+          "cheese",
+          "curd"
+        ],
+        "cha",
+        "chb"
+      ],
+      "project": "spell",
+      "source_week": 8,
+      "title": "Autocomplete range"
+    },
+    {
+      "method": "topKLinear",
+      "args": [
+        [
+          5,
+          2,
+          5,
+          8,
+          2,
+          5,
+          9,
+          2,
+          2
+        ],
+        2
+      ],
+      "project": "spell",
+      "source_week": 10,
+      "title": "Most common typos"
+    }
+  ],
+  "tickets": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "14",
+          "15",
+          "16",
+          "15",
+          "17",
+          "14"
+        ]
+      ],
+      "project": "tickets",
+      "source_week": 1,
+      "title": "Double bookings"
+    },
+    {
+      "method": "combinations",
+      "args": [
+        [
+          2,
+          3,
+          5,
+          5,
+          7,
+          8
+        ],
+        10
+      ],
+      "project": "tickets",
+      "source_week": 4,
+      "title": "Fill a row exactly"
+    },
+    {
+      "method": "apply",
+      "args": [
+        7,
+        [
+          [
+            0,
+            6,
+            3
+          ],
+          [
+            1,
+            3,
+            2
+          ],
+          [
+            2,
+            5,
+            1
+          ],
+          [
+            5,
+            6,
+            1
+          ]
+        ]
+      ],
+      "project": "tickets",
+      "source_week": 5,
+      "title": "Segment occupancy"
+    },
+    {
+      "method": "maxSlots",
+      "args": [
+        [
+          [
+            10,
+            12
+          ],
+          [
+            11,
+            13
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            14,
+            16
+          ],
+          [
+            13,
+            17
+          ]
+        ]
+      ],
+      "project": "tickets",
+      "source_week": 6,
+      "title": "Most shows in one venue"
+    },
+    {
+      "method": "lower",
+      "args": [
+        [
+          5,
+          10,
+          20,
+          30
+        ],
+        17
+      ],
+      "project": "tickets",
+      "source_week": 8,
+      "title": "Price tier"
+    },
+    {
+      "method": "mergeIntervals",
+      "args": [
+        [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            15,
+            18
+          ]
+        ]
+      ],
+      "project": "tickets",
+      "source_week": 10,
+      "title": "Merge holds"
+    }
+  ],
+  "meter": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "301",
+          "302",
+          "303",
+          "302",
+          "304",
+          "302"
+        ]
+      ],
+      "project": "meter",
+      "source_week": 1,
+      "title": "Duplicate readings"
+    },
+    {
+      "method": "minCoins",
+      "args": [
+        [
+          50,
+          120,
+          200
+        ],
+        370
+      ],
+      "project": "meter",
+      "source_week": 4,
+      "title": "Recharge packs"
+    },
+    {
+      "method": "count",
+      "args": [
+        [
+          4,
+          5,
+          0,
+          3,
+          2,
+          1
+        ],
+        5
+      ],
+      "project": "meter",
+      "source_week": 5,
+      "title": "Bill divisibility"
+    },
+    {
+      "method": "bestWindow",
+      "args": [
+        [
+          12,
+          15,
+          9,
+          22,
+          18,
+          30,
+          14
+        ],
+        3
+      ],
+      "project": "meter",
+      "source_week": 7,
+      "title": "Peak demand"
+    },
+    {
+      "method": "lower",
+      "args": [
+        [
+          100,
+          200,
+          300,
+          500
+        ],
+        260
+      ],
+      "project": "meter",
+      "source_week": 8,
+      "title": "Slab lookup"
+    },
+    {
+      "method": "slidingMax",
+      "args": [
+        [
+          12,
+          15,
+          9,
+          22,
+          18,
+          30,
+          14
+        ],
+        3
+      ],
+      "project": "meter",
+      "source_week": 12,
+      "title": "Rolling maximum load"
+    }
+  ],
+  "judge": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          1,
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "project": "judge",
+      "source_week": 1,
+      "title": "Verdict statistics"
+    },
+    {
+      "method": "countSubsets",
+      "args": [
+        [
+          20,
+          30,
+          50,
+          40,
+          10,
+          60
+        ],
+        100
+      ],
+      "project": "judge",
+      "source_week": 4,
+      "title": "Problem sets worth 100"
+    },
+    {
+      "method": "rangeSums",
+      "args": [
+        [
+          14,
+          22,
+          35,
+          41,
+          28,
+          19
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      ],
+      "project": "judge",
+      "source_week": 5,
+      "title": "Submissions per minute range"
+    },
+    {
+      "method": "lcs",
+      "args": [
+        "forijsum",
+        "forjisum"
+      ],
+      "project": "judge",
+      "source_week": 7,
+      "title": "Plagiarism score"
+    },
+    {
+      "method": "min_capacity",
+      "args": [
+        [
+          12,
+          30,
+          18,
+          25,
+          40,
+          15
+        ],
+        3
+      ],
+      "project": "judge",
+      "source_week": 9,
+      "title": "Judge servers"
+    },
+    {
+      "method": "evaluate",
+      "args": [
+        "3+4*(2-1)*5"
+      ],
+      "project": "judge",
+      "source_week": 12,
+      "title": "Expression tests"
+    }
+  ],
+  "cloud": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "a9",
+          "c4",
+          "a9",
+          "f1",
+          "c4",
+          "a9"
+        ]
+      ],
+      "project": "cloud",
+      "source_week": 1,
+      "title": "Duplicate files"
+    },
+    {
+      "method": "total",
+      "args": [],
+      "own_values": [
+        5,
+        1200,
+        800,
+        950,
+        300
+      ],
+      "project": "cloud",
+      "source_week": 3,
+      "title": "Folder sizes"
+    },
+    {
+      "method": "merge",
+      "args": [
+        [
+          2,
+          5,
+          9,
+          14
+        ],
+        [
+          3,
+          5,
+          11
+        ]
+      ],
+      "project": "cloud",
+      "source_week": 6,
+      "title": "Merge device listings"
+    },
+    {
+      "method": "count",
+      "args": [
+        "/img/2025/img_01.jpg /img/2026/img_02.jpg",
+        "img"
+      ],
+      "project": "cloud",
+      "source_week": 7,
+      "title": "Find a name pattern"
+    },
+    {
+      "method": "min_capacity",
+      "args": [
+        [
+          450,
+          200,
+          380,
+          120,
+          260,
+          300
+        ],
+        4
+      ],
+      "project": "cloud",
+      "source_week": 9,
+      "title": "Sync bandwidth"
+    },
+    {
+      "method": "simulate",
+      "args": [
+        [
+          1,
+          2,
+          1,
+          3,
+          2,
+          1,
+          3
+        ],
+        2
+      ],
+      "project": "cloud",
+      "source_week": 11,
+      "title": "Thumbnail cache"
+    }
+  ],
+  "mandi": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          2,
+          5,
+          2,
+          7,
+          5,
+          2,
+          1
+        ]
+      ],
+      "project": "mandi",
+      "source_week": 1,
+      "title": "Most traded crop"
+    },
+    {
+      "method": "bestTotal",
+      "args": [
+        [
+          350,
+          420,
+          280,
+          160,
+          510
+        ],
+        1000
+      ],
+      "project": "mandi",
+      "source_week": 4,
+      "title": "Load a truck"
+    },
+    {
+      "method": "profit",
+      "args": [
+        [
+          1800,
+          1650,
+          1700,
+          2100,
+          1900,
+          2400,
+          2250
+        ]
+      ],
+      "project": "mandi",
+      "source_week": 5,
+      "title": "Best store-and-sell"
+    },
+    {
+      "method": "merge",
+      "args": [
+        [
+          1,
+          4,
+          6,
+          9
+        ],
+        [
+          2,
+          3,
+          7,
+          10
+        ]
+      ],
+      "project": "mandi",
+      "source_week": 6,
+      "title": "Merge two mandis"
+    },
+    {
+      "method": "lower",
+      "args": [
+        [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          9,
+          10
+        ],
+        7
+      ],
+      "project": "mandi",
+      "source_week": 8,
+      "title": "Price on a date"
+    },
+    {
+      "method": "waitDays",
+      "args": [
+        [
+          1800,
+          1650,
+          1700,
+          2100,
+          1900,
+          2400,
+          2250
+        ]
+      ],
+      "project": "mandi",
+      "source_week": 12,
+      "title": "Days until a better price"
+    }
+  ],
+  "bloodbank": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          0,
+          2,
+          0,
+          1,
+          0,
+          2,
+          3
+        ]
+      ],
+      "project": "bloodbank",
+      "source_week": 1,
+      "title": "Most requested group"
+    },
+    {
+      "method": "countSubsets",
+      "args": [
+        [
+          350,
+          450,
+          350,
+          250,
+          200
+        ],
+        800
+      ],
+      "project": "bloodbank",
+      "source_week": 4,
+      "title": "Exact volume"
+    },
+    {
+      "method": "apply",
+      "args": [
+        7,
+        [
+          [
+            0,
+            4,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            6,
+            1
+          ],
+          [
+            3,
+            5,
+            1
+          ]
+        ]
+      ],
+      "project": "bloodbank",
+      "source_week": 5,
+      "title": "Units usable each day"
+    },
+    {
+      "method": "merge",
+      "args": [
+        [
+          3,
+          8,
+          11,
+          21
+        ],
+        [
+          10,
+          11,
+          14,
+          15
+        ]
+      ],
+      "project": "bloodbank",
+      "source_week": 6,
+      "title": "Merge centre stocks"
+    },
+    {
+      "method": "count",
+      "args": [
+        [
+          3,
+          8,
+          10,
+          11,
+          11,
+          14,
+          15,
+          21
+        ],
+        10,
+        15
+      ],
+      "project": "bloodbank",
+      "source_week": 8,
+      "title": "Units expiring soon"
+    },
+    {
+      "method": "queueSim",
+      "args": [
+        [
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        3,
+        2
+      ],
+      "project": "bloodbank",
+      "source_week": 12,
+      "title": "Request queue"
+    }
+  ],
+  "moderation": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "h1",
+          "h2",
+          "h1",
+          "h1",
+          "h3",
+          "h2"
+        ]
+      ],
+      "project": "moderation",
+      "source_week": 1,
+      "title": "Repeated messages"
+    },
+    {
+      "method": "distance",
+      "args": [
+        "sp4mmer",
+        "spammer"
+      ],
+      "project": "moderation",
+      "source_week": 4,
+      "title": "Disguised words"
+    },
+    {
+      "method": "merge",
+      "args": [
+        [
+          5,
+          12,
+          30
+        ],
+        [
+          7,
+          12,
+          18,
+          40
+        ]
+      ],
+      "project": "moderation",
+      "source_week": 6,
+      "title": "Merge moderator flags"
+    },
+    {
+      "method": "count",
+      "args": [
+        "buy now buy now limited buy now",
+        "buy now"
+      ],
+      "project": "moderation",
+      "source_week": 7,
+      "title": "Phrase filter"
+    },
+    {
+      "method": "count",
+      "args": [
+        [
+          2,
+          5,
+          10,
+          11,
+          12,
+          19,
+          20,
+          27
+        ],
+        10,
+        20
+      ],
+      "project": "moderation",
+      "source_week": 8,
+      "title": "Messages in a window"
+    },
+    {
+      "method": "validBrackets",
+      "args": [
+        "*(bold [link])* {quote}"
+      ],
+      "project": "moderation",
+      "source_week": 12,
+      "title": "Markup validation"
+    }
+  ],
+  "warehouse": [
+    {
+      "method": "pairs",
+      "args": [
+        [
+          3,
+          7,
+          5,
+          5,
+          2,
+          8,
+          6
+        ],
+        10
+      ],
+      "project": "warehouse",
+      "source_week": 1,
+      "title": "Pairs for a box"
+    },
+    {
+      "method": "bestTotal",
+      "args": [
+        [
+          6,
+          4,
+          9,
+          3,
+          7
+        ],
+        15
+      ],
+      "project": "warehouse",
+      "source_week": 4,
+      "title": "Best box fill"
+    },
+    {
+      "method": "rangeSums",
+      "args": [
+        [
+          140,
+          220,
+          310,
+          280,
+          190,
+          120
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            5
+          ]
+        ]
+      ],
+      "project": "warehouse",
+      "source_week": 5,
+      "title": "Units in any hour range"
+    },
+    {
+      "method": "minLength",
+      "args": [
+        [
+          7,
+          2,
+          5,
+          10,
+          8,
+          3,
+          6
+        ],
+        30
+      ],
+      "project": "warehouse",
+      "source_week": 7,
+      "title": "Fill a truck fastest"
+    },
+    {
+      "method": "min_capacity",
+      "args": [
+        [
+          7,
+          2,
+          5,
+          10,
+          8,
+          3,
+          6
+        ],
+        3
+      ],
+      "project": "warehouse",
+      "source_week": 9,
+      "title": "Truck capacity"
+    },
+    {
+      "method": "mergeIntervals",
+      "args": [
+        [
+          [
+            8,
+            10
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            15,
+            17
+          ]
+        ]
+      ],
+      "project": "warehouse",
+      "source_week": 10,
+      "title": "Dock slots"
+    }
+  ],
+  "placement": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "2201",
+          "2202",
+          "2203",
+          "2201",
+          "2204",
+          "2202"
+        ]
+      ],
+      "project": "placement",
+      "source_week": 1,
+      "title": "Duplicate registrations"
+    },
+    {
+      "method": "combinations",
+      "args": [
+        [
+          30,
+          45,
+          60,
+          15,
+          30,
+          90
+        ],
+        120
+      ],
+      "project": "placement",
+      "source_week": 4,
+      "title": "Round plans"
+    },
+    {
+      "method": "apply",
+      "args": [
+        8,
+        [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            3,
+            1
+          ],
+          [
+            2,
+            5,
+            1
+          ],
+          [
+            4,
+            7,
+            1
+          ]
+        ]
+      ],
+      "project": "placement",
+      "source_week": 5,
+      "title": "Rooms needed per hour"
+    },
+    {
+      "method": "maxSlots",
+      "args": [
+        [
+          [
+            9,
+            10
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            13
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            13,
+            15
+          ]
+        ]
+      ],
+      "project": "placement",
+      "source_week": 6,
+      "title": "Most interviews for one student"
+    },
+    {
+      "method": "count",
+      "args": [
+        [
+          62,
+          68,
+          71,
+          75,
+          78,
+          81,
+          84,
+          90,
+          93
+        ],
+        75,
+        90
+      ],
+      "project": "placement",
+      "source_week": 8,
+      "title": "Eligibility cut-off"
+    },
+    {
+      "method": "mergeIntervals",
+      "args": [
+        [
+          [
+            9,
+            11
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            13,
+            15
+          ],
+          [
+            14,
+            17
+          ],
+          [
+            18,
+            19
+          ]
+        ]
+      ],
+      "project": "placement",
+      "source_week": 10,
+      "title": "Merge room bookings"
+    }
+  ],
+  "editor": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          7,
+          3,
+          7,
+          1,
+          3,
+          7,
+          2
+        ]
+      ],
+      "project": "editor",
+      "source_week": 1,
+      "title": "Most used word"
+    },
+    {
+      "method": "distance",
+      "args": [
+        "algoritm",
+        "algorithm"
+      ],
+      "project": "editor",
+      "source_week": 4,
+      "title": "Autocorrect distance"
+    },
+    {
+      "method": "rangeSums",
+      "args": [
+        [
+          120,
+          85,
+          240,
+          60,
+          175
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      ],
+      "project": "editor",
+      "source_week": 5,
+      "title": "Words in any paragraphs"
+    },
+    {
+      "method": "count",
+      "args": [
+        "abracadabra abracadabra",
+        "abra"
+      ],
+      "project": "editor",
+      "source_week": 7,
+      "title": "Find all"
+    },
+    {
+      "method": "lower",
+      "args": [
+        [
+          40,
+          95,
+          130,
+          180,
+          260
+        ],
+        140
+      ],
+      "project": "editor",
+      "source_week": 8,
+      "title": "Jump to an offset"
+    },
+    {
+      "method": "validBrackets",
+      "args": [
+        "if (a[i] > b) { x = (y]; }"
+      ],
+      "project": "editor",
+      "source_week": 12,
+      "title": "Bracket matching"
+    }
+  ],
+  "fraud": [
+    {
+      "method": "repeats",
+      "args": [
+        [
+          "7001",
+          "7002",
+          "7003",
+          "7002",
+          "7004",
+          "7002"
+        ]
+      ],
+      "project": "fraud",
+      "source_week": 1,
+      "title": "Duplicate transactions"
+    },
+    {
+      "method": "countSubsets",
+      "args": [
+        [
+          20,
+          30,
+          50,
+          40,
+          10,
+          60
+        ],
+        100
+      ],
+      "project": "fraud",
+      "source_week": 4,
+      "title": "Matching a flagged amount"
+    },
+    {
+      "method": "count",
+      "args": [
+        [
+          2000,
+          3000,
+          5000,
+          4000,
+          1000,
+          5000,
+          5000
+        ],
+        10000
+      ],
+      "project": "fraud",
+      "source_week": 5,
+      "title": "Exact-amount runs"
+    },
+    {
+      "method": "minLength",
+      "args": [
+        [
+          5,
+          12,
+          8,
+          20,
+          15,
+          3,
+          25
+        ],
+        50
+      ],
+      "project": "fraud",
+      "source_week": 7,
+      "title": "Fastest Rs 50 000"
+    },
+    {
+      "method": "count",
+      "args": [
+        [
+          5,
+          18,
+          30,
+          31,
+          44,
+          59,
+          60,
+          75
+        ],
+        30,
+        60
+      ],
+      "project": "fraud",
+      "source_week": 8,
+      "title": "Transactions in a window"
+    },
+    {
+      "method": "slidingMax",
+      "args": [
+        [
+          500,
+          1200,
+          300,
+          9000,
+          400,
+          350,
+          8000
+        ],
+        3
+      ],
+      "project": "fraud",
+      "source_week": 12,
+      "title": "Rolling maximum amount"
+    }
+  ],
+  "harvest": [
+    {
+      "method": "frequent",
+      "args": [
+        [
+          0,
+          1,
+          2,
+          3,
+          1,
+          0,
+          2,
+          3,
+          0
+        ]
+      ],
+      "project": "harvest",
+      "source_week": 1,
+      "title": "Rainfall bands"
+    },
+    {
+      "method": "region",
+      "args": [
+        [
+          "..#.",
+          ".##.",
+          "...#",
+          "#..."
+        ],
+        0,
+        0
+      ],
+      "project": "harvest",
+      "source_week": 3,
+      "title": "Flooded region"
+    },
+    {
+      "method": "rangeSums",
+      "args": [
+        [
+          0,
+          12,
+          35,
+          60,
+          8,
+          0,
+          22,
+          41
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            7
+          ]
+        ]
+      ],
+      "project": "harvest",
+      "source_week": 5,
+      "title": "Rainfall over a period"
+    },
+    {
+      "method": "water",
+      "args": [
+        [
+          12,
+          4,
+          7,
+          2,
+          9,
+          3,
+          3,
+          15,
+          6,
+          8,
+          1,
+          10
+        ]
+      ],
+      "project": "harvest",
+      "source_week": 6,
+      "title": "Water trapped"
+    },
+    {
+      "method": "min_capacity",
+      "args": [
+        [
+          12,
+          35,
+          60,
+          8,
+          22,
+          41,
+          18
+        ],
+        4
+      ],
+      "project": "harvest",
+      "source_week": 9,
+      "title": "Pump capacity"
+    },
+    {
+      "method": "maxRectangle",
+      "args": [
+        [
+          2,
+          1,
+          5,
+          6,
+          2,
+          3
+        ]
+      ],
+      "project": "harvest",
+      "source_week": 12,
+      "title": "Largest flat roof area"
+    }
+  ]
+}
