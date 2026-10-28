@@ -35,7 +35,7 @@ The source week is the original catalogue identifier. Teaching weeks use the rev
 
 ## 1. Favourite activity
 
-Count sessions per activity type (count array); report the most frequent. Count occurrences per bounded integer ID and report the ID with highest frequency, its frequency and number of distinct IDs. Lab tie rule: smaller ID wins. Empty input has no most-frequent ID and is outside this report contract.
+Count sessions per activity type (count array); report the most frequent. Count occurrences per bounded integer ID and report the ID with highest frequency, its frequency and number of distinct IDs. Lab tie rule: smaller ID wins. The source report contract assumes nonempty input. This implementation additionally returns a no-result report for empty input, as a defensive extension.
 
 **Contract:** `String frequent(int[] ids)`
 
@@ -54,7 +54,7 @@ Verified expected: most frequent=2 (count 4), distinct=3
 CoreBasics.frequent(new int[]{2,1,2,3,2,1,1,2})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Count using array for fixed small universe or a hash map for sparse IDs. On ties choose the smaller ID; frequency is not the numerical ID. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
 
@@ -84,7 +84,7 @@ Verified expected: 4
 W04CatalogueReference.countSubsets(new int[]{20,30,10,40,30},60)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** State (index,remaining); include and skip counts add. A zero value doubles relevant index choices.
 
@@ -114,7 +114,7 @@ Verified expected: "best=9920 over indices 3..5"
 W05CatalogueReference.bestInterval(new long[]{-800L,1450L,-2700L,3100L,800L,6020L,-4700L})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Track best interval ending here, then best seen. All-negative inputs must retain their largest element.
 
@@ -144,7 +144,7 @@ Verified expected: "sum=69920 starting at index 3"
 Week7ProjectReference.bestWindow(new int[]{8200,10450,6300,12100,9800,15020,4300,7600,11200,9900},7)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Keep one long sum; add entering and subtract departing value; compare only complete windows. Create a complete Java class with main and run all three cases. See W07 Java and the matching skill method for a starting pattern. Complete tested faculty source for this family:W07 Project Reference/private package. Implement the full ONE chosen increment;common rolling model is not a compulsory extra project.
 
@@ -174,7 +174,7 @@ Expected output (independently verified): 8200
 Week9ProjectReference.max_goal(new int[]{8200,10450,6300,12100,9800,15020,4300},5)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Search last feasible goal in [0,max(steps)]; count qualifying days; duplicates count as separate days. Adapt the matching skill/problem starter or ProjectW09; create complete main, run catalogue and boundary cases. State monotonicity, safe bounds, shrinking measure and adjacent infeasible answer. Full tested faculty implementations:W09 Project Reference/private package. Choose your actual family;capacity grouping,ceil-hour rate,day threshold and spacing are different predicates. Common SLA model is support,not a compulsory additional project.
 
@@ -204,7 +204,7 @@ Verified expected: [95, 110, 110, 110, 120, 120]
 Week12ProjectReference.slidingMax(new int[]{72,80,95,110,104,98,120,90},3)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Deque of indices: expire indices≤i−k from front; remove back values≤current, keeping newer equal peaks; emit front value after k readings.
 

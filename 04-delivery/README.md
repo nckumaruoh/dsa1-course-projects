@@ -54,7 +54,7 @@ Verified expected: repeats=2, distinct=5, first repeat=42
 CoreBasics.repeats(new String[]{"41","42","43","42","44","45","41"})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Use a frequency/seen map, or coordinate-compress IDs once and count with an array. Mark firstRepeat only on the first repeated encounter. Preserve input. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
 
@@ -84,7 +84,7 @@ Verified expected: 10
 W04CatalogueReference.bestTotal(new int[]{3,4,5,7,2},10)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** State (index,remaining); memoise include/skip and reuse cache across target queries.
 
@@ -114,7 +114,7 @@ Verified expected: 2 + 7 (one valid pair; others accepted)
 W06CatalogueReference.pair(new int[]{2,7,4,5,3,8},9)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Sort a copy; move low or high according to the sum. Use long for intermediate sums.
 
@@ -144,7 +144,7 @@ Verified expected: 5
 Week7ProjectReference.minLength(new int[]{8,12,5,20,9,14,3},50)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Grow right; while sum reaches target, update length and shrink left. Negative values break this monotonic shrinking rule. Create a complete Java class with main and run all three cases. See W07 Java and the matching skill method for a starting pattern. Complete tested faculty source for this family:W07 Project Reference/private package. Implement the full ONE chosen increment;common rolling model is not a compulsory extra project.
 
@@ -174,7 +174,7 @@ Expected output (independently verified): 23
 Week9ProjectReference.min_rate(new int[]{30,11,23,4,20},6)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Search first rate with sum ceil(work/rate)≤hours, in [1,max(work)]. Use long totals. Adapt the matching skill/problem starter or ProjectW09; create complete main, run catalogue and boundary cases. State monotonicity, safe bounds, shrinking measure and adjacent infeasible answer. Full tested faculty implementations:W09 Project Reference/private package. Choose your actual family;capacity grouping,ceil-hour rate,day threshold and spacing are different predicates. Common SLA model is support,not a compulsory additional project.
 
@@ -204,7 +204,7 @@ Expected output, independently verified: [[9, 16], [18, 23]]
 Week10ProjectReference.mergeIntervals(new int[][]{new int[]{9,13},new int[]{12,15},new int[]{18,22},new int[]{21,23},new int[]{14,16}})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** See the checked Java implementation and regression suite.
 

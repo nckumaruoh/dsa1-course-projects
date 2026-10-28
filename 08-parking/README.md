@@ -54,7 +54,7 @@ Verified expected: repeats=2, distinct=4, first repeat=3301
 CoreBasics.repeats(new String[]{"3301","4410","3301","5120","4410","6008"})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Use a frequency/seen map, or coordinate-compress IDs once and count with an array. Mark firstRepeat only on the first repeated encounter. Preserve input. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
 
@@ -84,7 +84,7 @@ Verified expected: 2
 W04CatalogueReference.paths(new String[]{"...",".#.","..."})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Base start=1 only when free; each open cell sums top and left. Memo state is (row,col).
 
@@ -114,7 +114,7 @@ Verified expected: 3
 W05CatalogueReference.rectangle(new long[][]{new long[]{1L,0L,1L,1L},new long[]{0L,1L,1L,0L},new long[]{1L,1L,0L,1L}},0,1,1,2)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Build 2D prefix with an extra zero border and apply four-corner inclusion-exclusion.
 
@@ -144,7 +144,7 @@ Verified expected: 4
 W06CatalogueReference.maxSlots(new int[][]{new int[]{1,3},new int[]{2,5},new int[]{4,6},new int[]{6,8},new int[]{5,9},new int[]{8,10}})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Sort a copy by finish time, then accept when startâ‰¥lastFinish. Provide an exchange argument; this catalogue extension is guided.
 
@@ -174,7 +174,7 @@ Verified expected output: 2
 W08CatalogueReference.lower(new int[]{60,120,180,240,360},135)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Use [lo,hi), hi=n; sorted[mid]<target advances lo to mid+1, otherwise hi=mid. Preserve sortedness precondition. Adapt ProjectW08 or the matching bound-based skill starter, add a complete main and run the source example plus boundary cases. Faculty complete code:W08 Project Reference/private package. W08CatalogueReference one-call adapters INCLUDE validation/copy build per call;query O(log n) applies only after retaining a built index. Raw static bound helpers assume sorted validated input. Implement ONE chosen source increment;common model is support.
 
@@ -204,7 +204,7 @@ Verified expected: served=7, total wait=28 min, longest wait=7 min
 Week12ProjectReference.queueSim(new int[]{1,2,2,1,0,1,0},2,1)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Implement circular-array FIFO of arrival times, then assign each dequeued request to earliest available counter at max(arrival,available). Compare one and two counters using the same arrivals/service. Use long totals and available times.
 

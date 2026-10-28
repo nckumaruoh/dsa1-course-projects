@@ -35,7 +35,7 @@ The source week is the original catalogue identifier. Teaching weeks use the rev
 
 ## 1. Hours per category
 
-Count hours in each AQI category (count array over category ids); most common category. Count occurrences per bounded integer ID and report the ID with highest frequency, its frequency and number of distinct IDs. Lab tie rule: smaller ID wins. Empty input has no most-frequent ID and is outside this report contract.
+Count hours in each AQI category (count array over category ids); most common category. Count occurrences per bounded integer ID and report the ID with highest frequency, its frequency and number of distinct IDs. Lab tie rule: smaller ID wins. The source report contract assumes nonempty input. This implementation additionally returns a no-result report for empty input, as a defensive extension.
 
 **Contract:** `String frequent(int[] ids)`
 
@@ -54,7 +54,7 @@ Verified expected: most frequent=3 (count 4), distinct=3
 CoreBasics.frequent(new int[]{2,3,3,4,3,2,4,3})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Count using array for fixed small universe or a hash map for sparse IDs. On ties choose the smaller ID; frequency is not the numerical ID. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
 
@@ -84,7 +84,7 @@ Verified expected: 9
 CoreBasics.region(new String[]{"..#.",".##.","...#","#..."},0,0)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Mark before exploring. For large grids use an explicit stack/queue to avoid Java recursion overflow.
 
@@ -114,7 +114,7 @@ Verified expected: 815
 W05CatalogueReference.rectangle(new long[][]{new long[]{120L,145L,180L,90L},new long[]{210L,260L,230L,110L},new long[]{190L,150L,140L,95L}},0,1,1,2)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Build 2D prefix with an extra zero border and apply four-corner inclusion-exclusion.
 
@@ -144,7 +144,7 @@ Verified expected: "sum=700 starting at index 3"
 Week7ProjectReference.bestWindow(new int[]{120,145,180,210,260,230,190,150},3)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Keep one long sum; add entering and subtract departing value; compare only complete windows. Create a complete Java class with main and run all three cases. See W07 Java and the matching skill method for a starting pattern. Complete tested faculty source for this family:W07 Project Reference/private package. Implement the full ONE chosen increment;common rolling model is not a compulsory extra project.
 
@@ -174,7 +174,7 @@ Verified expected output: 3
 W08CatalogueReference.count(new int[]{120,145,150,180,190,210,230,260,310},200,300)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Compute lower(hi)−lower(lo), not a first/last matching-index scan. Both bounds may validly equal n. Adapt ProjectW08 or the matching bound-based skill starter, add a complete main and run the source example plus boundary cases. Faculty complete code:W08 Project Reference/private package. W08CatalogueReference one-call adapters INCLUDE validation/copy build per call;query O(log n) applies only after retaining a built index. Raw static bound helpers assume sorted validated input. Implement ONE chosen source increment;common model is support.
 
@@ -204,7 +204,7 @@ Verified expected: [1, 3, 2, 1, 2, 1, 0]
 Week12ProjectReference.waitDays(new int[]{120,145,130,110,160,150,170})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Stack unresolved indices, popping only on a strictly larger reading and recording index difference.
 

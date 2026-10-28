@@ -54,7 +54,7 @@ Verified expected: repeats=2, distinct=4, first repeat=2201
 CoreBasics.repeats(new String[]{"2201","2202","2203","2201","2204","2202"})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Use a frequency/seen map, or coordinate-compress IDs once and count with an array. Mark firstRepeat only on the first repeated encounter. Preserve input. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
 
@@ -84,7 +84,7 @@ Verified expected: [[15, 30, 30, 45], [15, 45, 60], [30, 30, 60], [30, 90]]
 W04CatalogueReference.combinations(new int[]{30,45,60,15,30,90},120)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Sort a copy, skip equal siblings, recurse with i+1 and copy successful paths.
 
@@ -114,7 +114,7 @@ Verified expected: [1, 2, 3, 2, 2, 2, 1, 1]
 W05CatalogueReference.apply(8,new int[][]{new int[]{0,2,1},new int[]{1,3,1},new int[]{2,5,1},new int[]{4,7,1}})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Allocate n+1 changes; add at l and subtract at r+1, then reconstruct n positions.
 
@@ -144,7 +144,7 @@ Verified expected: 4
 W06CatalogueReference.maxSlots(new int[][]{new int[]{9,10},new int[]{9,12},new int[]{10,11},new int[]{11,13},new int[]{12,14},new int[]{13,15}})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Sort a copy by finish time, then accept when startâ‰¥lastFinish. Provide an exchange argument; this catalogue extension is guided.
 
@@ -174,7 +174,7 @@ Verified expected output: 4
 W08CatalogueReference.count(new int[]{62,68,71,75,78,81,84,90,93},75,90)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Compute lower(hi)−lower(lo), not a first/last matching-index scan. Both bounds may validly equal n. Adapt ProjectW08 or the matching bound-based skill starter, add a complete main and run the source example plus boundary cases. Faculty complete code:W08 Project Reference/private package. W08CatalogueReference one-call adapters INCLUDE validation/copy build per call;query O(log n) applies only after retaining a built index. Raw static bound helpers assume sorted validated input. Implement ONE chosen source increment;common model is support.
 
@@ -204,7 +204,7 @@ Expected output, independently verified: [[9, 12], [13, 17], [18, 19]]
 Week10ProjectReference.mergeIntervals(new int[][]{new int[]{9,11},new int[]{10,12},new int[]{13,15},new int[]{14,17},new int[]{18,19}})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** See the checked Java implementation and regression suite.
 

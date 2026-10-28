@@ -54,7 +54,7 @@ Verified expected: repeats=2, distinct=4, first repeat=9001
 CoreBasics.repeats(new String[]{"9001","9002","9003","9001","9004","9001"})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Use a frequency/seen map, or coordinate-compress IDs once and count with an array. Mark firstRepeat only on the first repeated encounter. Preserve input. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
 
@@ -84,7 +84,7 @@ Verified expected: 4950
 W04CatalogueReference.bestTotal(new int[]{1850,2420,980,1460,3100},5000)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** State (index,remaining); memoise include/skip and reuse cache across target queries.
 
@@ -114,7 +114,7 @@ Verified expected: "profit=63 (buy day 3, sell day 7)"
 W05CatalogueReference.bestTrade(new long[]{2841L,2856L,2830L,2812L,2847L,2869L,2858L,2875L})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Maintain minimum earlier price and best later difference.
 
@@ -144,7 +144,7 @@ Verified expected: [1, 2, 3, 4, 6, 7, 9, 10]
 W06CatalogueReference.merge(new int[]{1,4,6,9},new int[]{2,3,7,10})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Two read indices plus output index; append the remaining suffix after either input ends.
 
@@ -174,7 +174,7 @@ Verified expected output: 5
 W08CatalogueReference.lower(new int[]{2,3,6,8,13,15,16},15)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Use [lo,hi), hi=n; sorted[mid]<target advances lo to mid+1, otherwise hi=mid. Preserve sortedness precondition. Adapt ProjectW08 or the matching bound-based skill starter, add a complete main and run the source example plus boundary cases. Faculty complete code:W08 Project Reference/private package. W08CatalogueReference one-call adapters INCLUDE validation/copy build per call;query O(log n) applies only after retaining a built index. Raw static bound helpers assume sorted validated input. Implement ONE chosen source increment;common model is support.
 
@@ -204,7 +204,7 @@ Verified expected: [1, 1, 1, 2, 1, 4, 6]
 Week12ProjectReference.span(new int[]{100,80,60,70,60,75,85})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Use LC901 price/span stack; combine equal-price blocks.
 

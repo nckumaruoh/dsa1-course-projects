@@ -35,7 +35,7 @@ The source week is the original catalogue identifier. Teaching weeks use the rev
 
 ## 1. Most played song
 
-Plays per song with a count array. Count occurrences per bounded integer ID and report the ID with highest frequency, its frequency and number of distinct IDs. Lab tie rule: smaller ID wins. Empty input has no most-frequent ID and is outside this report contract.
+Plays per song with a count array. Count occurrences per bounded integer ID and report the ID with highest frequency, its frequency and number of distinct IDs. Lab tie rule: smaller ID wins. The source report contract assumes nonempty input. This implementation additionally returns a no-result report for empty input, as a defensive extension.
 
 **Contract:** `String frequent(int[] ids)`
 
@@ -54,7 +54,7 @@ Verified expected: most frequent=4 (count 3), distinct=4
 CoreBasics.frequent(new int[]{4,2,4,7,9,2,4,7})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Count using array for fixed small universe or a hash map for sparse IDs. On ties choose the smaller ID; frequency is not the numerical ID. Compare against a small nested-loop/reference oracle. Array counting O(n+U) time/O(U) auxiliary space; hashing expectedO(n), O(distinct) entries plus string character work. Pair total can exceed int.
 
@@ -84,7 +84,7 @@ Verified expected: 4
 CoreBasics.winner(7,3)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Zero-based recurrence J(1)=0, J(n)=(J(n−1)+k)%n; return J+1.
 
@@ -114,7 +114,7 @@ Verified expected: [625, 1290]
 W05CatalogueReference.rangeSums(new long[]{210L,185L,240L,200L,260L,195L},new int[][]{new int[]{1,3},new int[]{0,5}})
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Build one frozen prefix with extra zero; validate bounds; compare each answer to a direct loop.
 
@@ -144,7 +144,7 @@ Verified expected: 5
 Week7ProjectReference.longest(new int[]{3,3,1,2,1,1,2,3,3,4},2)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Track frequencies, shrink while too many distinct keys remain, and delete zero-frequency keys. LC904 is the k=2 version. Create a complete Java class with main and run all three cases. See W07 Java and the matching skill method for a starting pattern. Complete tested faculty source for this family:W07 Project Reference/private package. Implement the full ONE chosen increment;common rolling model is not a compulsory extra project.
 
@@ -174,7 +174,7 @@ Verified expected output: 3
 W08CatalogueReference.lower(new int[]{210,395,635,835,1095,1290},700)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** Use [lo,hi), hi=n; sorted[mid]<target advances lo to mid+1, otherwise hi=mid. Preserve sortedness precondition. Adapt ProjectW08 or the matching bound-based skill starter, add a complete main and run the source example plus boundary cases. Faculty complete code:W08 Project Reference/private package. W08CatalogueReference one-call adapters INCLUDE validation/copy build per call;query O(log n) applies only after retaining a built index. Raw static bound helpers assume sorted validated input. Implement ONE chosen source increment;common model is support.
 
@@ -205,7 +205,7 @@ Hit ratio: 1/8
 Week11ProjectReference.simulate(new int[]{4,2,4,7,9,2,4,7},3)
 ```
 
-The actual result appears in [example-output.txt](example-output.txt). The test driver compares it with the declared expected result; pair-finding accepts any valid pair with two available occurrences.
+The actual result appears in [example-output.txt](example-output.txt). ProjectTest checks this fixture against its declared expected result.
 
 **Algorithm:** See the checked Java implementation and regression suite.
 

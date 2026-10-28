@@ -1,0 +1,45 @@
+{
+  "number": 1,
+  "id": "canteen",
+  "title": "CampusBite: Canteen Order Analytics",
+  "context": "Campus canteens now take UPI orders on a tablet. The manager wants to know which items sell, when the rush comes, and whether customers are being double-charged.",
+  "input": "Orders as parallel arrays: time (minutes since 8:00), item id (0..39), amount (Rs), UPI transaction id.",
+  "milestones": [
+    {
+      "source_week": 1,
+      "teaching_week": 1,
+      "title": "Catch double charges",
+      "requirement": "Find UPI transaction ids that appear more than once (a payment app retried). Compare an O(n²) scan with a count array."
+    },
+    {
+      "source_week": 4,
+      "teaching_week": 4,
+      "title": "Combo builder",
+      "requirement": "Pick menu items whose prices fit a Rs 150 budget as closely as possible (subset sum with a memo table)."
+    },
+    {
+      "source_week": 5,
+      "teaching_week": 5,
+      "title": "Revenue between two times",
+      "requirement": "Per-slot revenue with a prefix array; answer 'revenue from 12:30 to 13:15' in O(1)."
+    },
+    {
+      "source_week": 7,
+      "teaching_week": 6,
+      "title": "Find the lunch rush",
+      "requirement": "The busiest 30-minute window by revenue, sliding over per-10-minute totals."
+    },
+    {
+      "source_week": 8,
+      "teaching_week": 7,
+      "title": "Orders in a time slot",
+      "requirement": "Times are appended in order: count orders in [12:00, 13:00) with two lower bounds."
+    },
+    {
+      "source_week": 12,
+      "teaching_week": 12,
+      "title": "Counter queue simulation",
+      "requirement": "Simulate the token queue (FIFO) and report waiting times; compare 1 and 2 counters."
+    }
+  ]
+}

@@ -11,8 +11,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 02. MetroPulse: Smart-Card Ridership
 
@@ -23,8 +23,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 03. ScoreLens: Ball-by-Ball Cricket Analyzer
 
@@ -35,8 +35,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 04. DashRoute: Food-Delivery Rider Batching
 
@@ -47,8 +47,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 05. ShelfSense: Library Circulation
 
@@ -59,8 +59,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 06. MessVoice: Hostel Feedback Analyzer
 
@@ -71,8 +71,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 07. StepUp: Fitness Tracker Coach
 
@@ -83,8 +83,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 08. ParkSmart: Mall Parking Occupancy
 
@@ -95,8 +95,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 09. AirWatch: City AQI Monitor
 
@@ -107,8 +107,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 10. FlashCart: Flash-Sale Inventory
 
@@ -119,8 +119,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 11. ExamDesk: Results and Evaluation
 
@@ -131,8 +131,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 12. TuneLoop: Music Playlist Engine
 
@@ -143,8 +143,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 13. FairFare: Ride-Share Surge Analyzer
 
@@ -155,8 +155,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 14. BusBuddy: Route and Timetable Planner
 
@@ -167,8 +167,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 15. CareQueue: Hospital OPD Tokens
 
@@ -179,8 +179,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 16. TickerTrail: Stock Watchlist Analytics
 
@@ -191,8 +191,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 17. TrendTag: Social Hashtag Trends
 
@@ -203,8 +203,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 18. TypeRight: Spell Checker and Autocomplete
 
@@ -215,8 +215,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 19. SeatSure: Event Ticket Booking
 
@@ -227,8 +227,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 20. WattWise: Smart Electricity Billing
 
@@ -239,8 +239,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 21. CodeArena: Mini Online Judge
 
@@ -251,8 +251,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 22. DriveDiet: Cloud Storage Cleaner
 
@@ -263,8 +263,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 23. KisanRate: Mandi Crop-Price Tracker
 
@@ -275,8 +275,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 24. LifeLink: Blood Bank Inventory
 
@@ -287,8 +287,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 25. SafeChat: Message Moderation
 
@@ -299,8 +299,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 26. PackRight: Warehouse Order Packing
 
@@ -311,8 +311,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 27. PlaceMe: Campus Placement Scheduler
 
@@ -323,8 +323,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 28. NoteNest: Text Editor Core
 
@@ -335,8 +335,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 29. SafePay: UPI Fraud Monitor
 
@@ -347,8 +347,8 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
 
 ## 30. RainCatch: Rooftop Water Harvesting
 
@@ -359,5 +359,5 @@ Local work is tracked separately from GitHub publication and website linking.
 - [x] explanation and complexity
 - [x] related applications
 - [x] execution documentation
-- [ ] github publication
-- [ ] website link
+- [x] github publication
+- [x] website link
